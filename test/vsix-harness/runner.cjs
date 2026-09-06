@@ -11,10 +11,13 @@ exports.run = async function run() {
   assert.ok(commands.includes("workspaceColor.applyFromFolder"));
   assert.ok(commands.includes("workspaceColor.openPanel"));
 
-  const before = vscode.workspace
+  const automaticallyApplied = vscode.workspace
     .getConfiguration("workbench")
     .inspect("colorCustomizations")?.workspaceValue;
-  assert.equal(before, undefined, "packaged activation does not write before consent");
+  assert.ok(
+    automaticallyApplied && typeof automaticallyApplied["titleBar.activeBackground"] === "string",
+    "packaged activation applies the derived workspace color by default",
+  );
 
   await vscode.commands.executeCommand("workspaceColor.applyFromFolder");
   const after = vscode.workspace

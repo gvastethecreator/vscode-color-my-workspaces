@@ -186,9 +186,13 @@ export function colorFromIdentity(identity: string): string {
   return hslToHex(hue, sat, light);
 }
 
-export function randomWorkspaceColor(): string {
-  const hue = Math.floor(Math.random() * 360);
-  return hslToHex(hue, 52, 36);
+export function randomWorkspaceColor(random: () => number = Math.random): string {
+  const hue = clamp(random(), 0, 1) * 360;
+  const saturation = 38 + clamp(random(), 0, 1) * 42;
+  const brightness = 26 + clamp(random(), 0, 1) * 30;
+  const contrast = 25 + clamp(random(), 0, 1) * 65;
+  const varied = applyHslContrast(hue, saturation, brightness, contrast);
+  return hslToHex(varied.h, clamp(varied.s, 30, 90), clamp(varied.l, 18, 62));
 }
 
 export function shiftHue(hex: string, degrees: number): string {

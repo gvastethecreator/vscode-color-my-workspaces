@@ -16,7 +16,7 @@ assert.deepEqual(manifest.extensionKind, ["ui"]);
 assert.equal(manifest.capabilities?.untrustedWorkspaces?.supported, true);
 assert.equal(manifest.capabilities?.virtualWorkspaces, true);
 assert.equal(manifest.dependencies, undefined);
-assert.equal(manifest.contributes?.configuration?.properties?.["workspaceColor.autoApply"]?.default, false);
+assert.equal(manifest.contributes?.configuration?.properties?.["workspaceColor.autoApply"]?.default, true);
 assert.ok(changelog.includes(`## [${manifest.version}] - `));
 assert.ok(pdr.includes(`${manifest.version} release candidate`));
 assert.ok(security.includes(`Release candidate: ${manifest.version}`));

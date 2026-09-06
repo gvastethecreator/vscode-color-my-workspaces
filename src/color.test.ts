@@ -13,6 +13,7 @@ import {
   mixHex,
   normalizeHex,
   parseHex,
+  randomWorkspaceColor,
   relativeLuminance,
   rgbToHex,
 } from "./color.ts";
@@ -128,4 +129,23 @@ describe("color math", () => {
     const next = applyHslContrast(hsl.h, hsl.s, hsl.l, 100);
     assert.ok(Math.abs(next.l - 50) >= Math.abs(hsl.l - 50));
   });
+
+  it("varies Surprise Me saturation, brightness, and resulting contrast", () => {
+    const subdued = randomWorkspaceColor(sequenceRandom([0.5, 0, 0, 0]));
+    const vivid = randomWorkspaceColor(sequenceRandom([0.5, 0.999, 0.999, 0.999]));
+    const subduedHsl = hexToHsl(subdued)!;
+    const vividHsl = hexToHsl(vivid)!;
+
+    assert.ok(vividHsl.s > subduedHsl.s + 40);
+    assert.ok(vividHsl.l > subduedHsl.l + 15);
+    assert.notEqual(
+      contrastRatio(subdued, contrastForeground(subdued)).toFixed(2),
+      contrastRatio(vivid, contrastForeground(vivid)).toFixed(2),
+    );
+  });
 });
+
+function sequenceRandom(values: readonly number[]): () => number {
+  let index = 0;
+  return () => values[index++] ?? values.at(-1) ?? 0;
+}

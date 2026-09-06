@@ -32,11 +32,11 @@ async function renderSquareIcons() {
   const base = sharp(iconSourcePath).ensureAlpha();
 
   await base.clone().resize(512, 512, { fit: "fill" }).composite([{ input: cornerCutout(512), blend: "dest-out" }]).png().toFile(hiresIconPath);
-  await base.clone().resize(128, 128, { fit: "fill" }).composite([{ input: cornerCutout(128), blend: "dest-out" }]).png().toFile(marketplaceIconPath);
+  await base.clone().resize(256, 256, { fit: "fill" }).composite([{ input: cornerCutout(256), blend: "dest-out" }]).png().toFile(marketplaceIconPath);
 
-  const meta128 = await sharp(marketplaceIconPath).metadata();
+  const meta256 = await sharp(marketplaceIconPath).metadata();
   const meta512 = await sharp(hiresIconPath).metadata();
-  console.log(`icon.png ${meta128.width}x${meta128.height}`);
+  console.log(`icon.png ${meta256.width}x${meta256.height}`);
   console.log(`icon-512.png ${meta512.width}x${meta512.height}`);
 }
 

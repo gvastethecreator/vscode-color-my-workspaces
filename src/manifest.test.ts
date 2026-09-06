@@ -12,9 +12,9 @@ describe("extension manifest", () => {
     assert.equal(manifest.engines.vscode, "^1.134.0");
   });
 
-  it("uses explicit first application by default", () => {
+  it("uses automatic application by default", () => {
     const properties = manifest.contributes.configuration.properties;
-    assert.equal(properties["workspaceColor.autoApply"].default, false);
+    assert.equal(properties["workspaceColor.autoApply"].default, true);
     assert.equal(properties["workspaceColor.autoApply"].scope, "window");
   });
 

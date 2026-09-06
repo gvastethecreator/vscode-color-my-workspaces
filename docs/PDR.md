@@ -24,8 +24,7 @@ The product is deliberately local-first. It has no telemetry, account, cloud ser
 
 ## 0.1.0 scope
 
-- explicit first application; no workspace configuration write on first activation;
-- optional per-workspace automatic reapplication;
+- automatic first application and reapplication by default, with a per-workspace override;
 - title bar, activity bar, Status Bar, and command center color groups;
 - deterministic folder/workspace color and bounded palette;
 - one Status Bar item with Quick Pick or full-panel click behavior;
@@ -41,11 +40,11 @@ The product is deliberately local-first. It has no telemetry, account, cloud ser
 
 ### First activation
 
-Activation registers commands and shows the workspace identity. It does not write `workbench.colorCustomizations` or `workspaceColor.*`.
+Activation registers commands, derives the stable workspace identity, and applies its color when `workspaceColor.autoApply` has no `false` override. The first managed write captures existing `workbench.colorCustomizations` values before changing them. Clear keeps that workspace disabled until another explicit color action.
 
-### First apply
+### Application
 
-A palette choice, folder color, Surprise Me, or explicit auto-apply opt-in may write workspace configuration. VS Code can store that configuration in `.vscode/settings.json` or a `.code-workspace` file, so it may appear in source control.
+Automatic application, a palette choice, folder color, or Surprise Me may write workspace configuration. VS Code can store that configuration in `.vscode/settings.json` or a `.code-workspace` file, so it may appear in source control.
 
 Before writing a managed color key, the extension captures whether the workspace value was absent or records its exact string value.
 
@@ -65,6 +64,8 @@ Clear restores intact baselines and removes the saved color. It preserves unmana
 
 Reset does the same restoration, then removes all `workspaceColor.*` workspace values and restores a Modern UI value changed by the extension when ownership is still intact.
 
+Set defaults writes factory values for Status Bar, surface, and auto-apply settings to user settings and to the current workspace. Color, label, and identity stay local.
+
 ## Commands
 
 - `workspaceColor.applyFromFolder`
@@ -73,6 +74,7 @@ Reset does the same restoration, then removes all `workspaceColor.*` workspace v
 - `workspaceColor.surprise`
 - `workspaceColor.reset`
 - `workspaceColor.resetSettings`
+- `workspaceColor.setDefaults`
 - `workspaceColor.reapply`
 - `workspaceColor.openPanel`
 
@@ -83,7 +85,7 @@ Command ids are public integration points and remain stable.
 | Setting | Default | Purpose |
 | --- | --- | --- |
 | `workspaceColor.color` | empty | Saved hex color; empty uses the stable derived color |
-| `workspaceColor.autoApply` | `false` | Reapply after explicit opt-in |
+| `workspaceColor.autoApply` | `true` | Apply and reapply on workspace open unless overridden |
 | `workspaceColor.identity` | empty | Stable identity override for color derivation |
 | `workspaceColor.label` | empty | Status Bar name; empty uses the workspace or folder name |
 | `workspaceColor.showStatusBarLabel` | `true` | Show the workspace name |
@@ -92,7 +94,7 @@ Command ids are public integration points and remain stable.
 | `workspaceColor.statusBarClick` | `quick` | Open Quick settings or Full settings |
 | `workspaceColor.stepped` | `true` | Use a different tone on each surface |
 | `workspaceColor.titleBar` | `true` | Color the title bar and window shell |
-| `workspaceColor.activityBar` | `true` | Color the activity bar |
+| `workspaceColor.activityBar` | `true` | Color the activity bar; without an override, disable top/bottom under Modern UI and enable side/classic layouts |
 | `workspaceColor.statusBar` | `true` | Color the Status Bar |
 | `workspaceColor.commandCenter` | `true` | Color the command center |
 
@@ -113,6 +115,8 @@ All extension settings use workspace-window scope.
 | Experimental Modern UI | Best effort, separately detected and documented; never toggled automatically |
 
 Minimum engine support and Modern UI shell behavior are separate contracts. Modern UI is experimental and can change independently of `engines.vscode`.
+
+With no `workspaceColor.activityBar` override, the effective Activity Bar default is off only when Modern UI is enabled and the bar is at the top or bottom. Left, right, classic, and unknown layouts default to on. An explicit boolean always wins.
 
 ## Architecture
 
@@ -146,11 +150,11 @@ The release runtime is bundled. There are no production dependencies.
 - workspace identity is not encoded only by color;
 - foreground selection targets at least WCAG 4.5:1, with black/white fallback;
 - high-contrast themes retain Status Bar and panel identity while chrome overrides are suspended;
-- the Status Bar item has a stable id, accessible label, tooltip, command, and sane priority.
+- the Status Bar item has a stable id, accessible label, tooltip, command, and the maximum finite left-side priority.
 
 ## Assets
 
-`media/source/color-my-workspaces-approved.png` preserves the approved transparent icon at 512×512. Marketplace and high-resolution PNGs are rendered directly from that raster source; no SVG reinterpretation remains. `media/preview.png` shows the extension applied to a synthetic TypeScript workspace, and `media/preview-settings.png` shows the minimal settings panel beside the same code. Both are native-alpha captures from Color My Workspaces 0.1.0 installed in stable VS Code.
+`media/source/color-my-workspaces-approved.png` is the accepted native-alpha Imagegen source for the Tag Mate-aligned, vectorized semi-3D 3×3 folder grid. `media/icon-512.png` and `media/icon.png` are direct alpha-preserving 512×512 and 256×256 renders; no SVG reinterpretation remains. `media/preview.png` shows the extension applied to a synthetic TypeScript workspace, and `media/preview-settings.png` shows the minimal settings panel beside the same code. Both are native-alpha captures from Color My Workspaces 0.1.0 installed in stable VS Code.
 
 ## Explicit non-goals
 
@@ -164,7 +168,7 @@ The release runtime is bundled. There are no production dependencies.
 
 ## Acceptance criteria
 
-- no first-run workspace mutation;
+- a fresh workspace receives its derived color automatically unless `workspaceColor.autoApply` is explicitly disabled;
 - existing 0.0.x users keep their stored color when legacy ownership is recognized;
 - managed baselines restore without deleting unrelated values;
 - external values are not silently overwritten;

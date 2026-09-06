@@ -26,6 +26,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
   register("workspaceColor.surprise", () => controller.runSurprise());
   register("workspaceColor.reset", () => controller.runClear());
   register("workspaceColor.resetSettings", () => controller.runResetSettings());
+  register("workspaceColor.setDefaults", () => controller.runSetDefaults());
   register("workspaceColor.reapply", () => controller.runReapply());
 
   context.subscriptions.push(

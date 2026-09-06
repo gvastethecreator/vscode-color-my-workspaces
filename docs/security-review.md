@@ -1,6 +1,6 @@
 # Security and privacy review
 
-Review date: 2026-09-02
+Review date: 2026-09-03
 Release candidate: 0.1.0
 
 ## Data inventory
@@ -22,6 +22,7 @@ Release candidate: 0.1.0
 
 Settings are untrusted and may be changed by users, Settings Sync, other windows, or extensions. The extension:
 
+- applies a derived color by default on first activation, which can create a workspace-file change; `workspaceColor.autoApply: false` disables that automatic write;
 - accepts only normalized hex colors and allowlisted surface/icon/enum values at UI boundaries;
 - preserves all unmanaged configuration values;
 - snapshots the exact configuration used by a plan;

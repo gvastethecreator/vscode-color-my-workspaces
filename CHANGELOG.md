@@ -6,10 +6,11 @@ All notable changes to Color My Workspaces are documented in this file.
 
 ### Added
 
-- Explicit opt-in automatic application and a first-run policy that performs no workspace write on activation
+- Automatic first-run application and reapplication, enabled by default with a per-workspace override
 - Versioned URI identity, local state, managed-key registry, baselines, generations, and 0.0.x migration
 - External-change conflict choices: keep, reapply with a new baseline, or stop managing affected surfaces
 - Reversible Clear and Reset behavior
+- A Set defaults action that writes factory settings to user and workspace scope. Workspace color, label, and identity stay local.
 - One accessible Status Bar controller and a Reapply command
 - Structured classic/modern/unknown shell compatibility and reversible Modern UI scope handling
 - High-contrast suspension and WCAG contrast-ratio foreground selection
@@ -20,7 +21,10 @@ All notable changes to Color My Workspaces are documented in this file.
 
 ### Changed
 
-- Activity Bar enablement now follows its boolean setting consistently for side, top, and bottom positions
+- An unset Activity Bar option is disabled for top or bottom placement under Modern UI and enabled for side placement or classic UI
+- Default palette colors are 15% more saturated, and Surprise Me now varies saturation, brightness, and contrast
+- Status Bar identity returns to the maximum finite left-side priority
+- Status icon SVGs now retain their namespace so the picker and live preview render correctly
 - Workspace identity now prefers the saved workspace URI or length-prefixed sorted folder URIs and keeps remote scheme/authority/path semantics
 - Generated colors use black/white fallback when the normal foreground tokens cannot reach 4.5:1
 - The panel no longer retains hidden webview context and uses external JavaScript/CSS
@@ -29,9 +33,8 @@ All notable changes to Color My Workspaces are documented in this file.
 
 ### Removed
 
-- Two extremely high-priority Status Bar items
+- The separate two-item Status Bar controller
 - Destructive key-list merging that could delete pre-existing or external values
-- Automatic first-run chrome mutation for new workspaces
 - Obsolete `merge.ts` ownership path
 
 ## [0.0.34] - 2026-08-31

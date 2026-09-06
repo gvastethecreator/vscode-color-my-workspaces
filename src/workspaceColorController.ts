@@ -6,7 +6,11 @@ import {
   type ChromeFlags,
 } from "./chrome.ts";
 import { colorFromIdentity, contrastForeground, normalizeHex, randomWorkspaceColor } from "./color.ts";
-import { describeChromeCompatibility, detectChromeCompatibility } from "./compatibility.ts";
+import {
+  describeChromeCompatibility,
+  detectChromeCompatibility,
+  resolveActivityBarFlag,
+} from "./compatibility.ts";
 import { DEFAULT_STATUS_ICON, parseCodiconId } from "./icons.ts";
 import {
   legacyWorkspaceIdentity,
@@ -71,6 +75,10 @@ const WORKSPACE_COLOR_SETTING_KEYS = [
   "statusBar",
   "commandCenter",
 ] as const;
+
+const DEFAULT_SETTING_KEYS = WORKSPACE_COLOR_SETTING_KEYS.filter(
+  (key) => key !== "color" && key !== "label" && key !== "identity",
+);
 
 type ConflictChoice = "keep" | "reapply" | "stop";
 
@@ -271,6 +279,32 @@ export class WorkspaceColorController implements vscode.Disposable {
     });
   }
 
+  async runSetDefaults(): Promise<void> {
+    const confirm = "Set defaults";
+    const choice = await vscode.window.showWarningMessage(
+      "Set Color My Workspaces defaults for all workspaces? This workspace color is not changed.",
+      { modal: true },
+      confirm,
+    );
+    if (choice !== confirm) {
+      return;
+    }
+    await this.writes.enqueue(async () => {
+      const configuration = vscode.workspace.getConfiguration("workspaceColor");
+      const targets: vscode.ConfigurationTarget[] = [vscode.ConfigurationTarget.Global];
+      if (this.hasWorkspace()) {
+        targets.push(vscode.ConfigurationTarget.Workspace);
+      }
+      for (const key of DEFAULT_SETTING_KEYS) {
+        const value = configuration.inspect(key)?.defaultValue;
+        for (const target of targets) {
+          await configuration.update(key, value, target);
+        }
+      }
+      await this.refreshNow();
+    });
+  }
+
   async runReapply(): Promise<void> {
     if (!this.requireWorkspace()) {
       return;
@@ -349,6 +383,9 @@ export class WorkspaceColorController implements vscode.Disposable {
       case "resetSettings":
         await this.runResetSettings();
         return;
+      case "setDefaults":
+        await this.runSetDefaults();
+        return;
       case "copyHex":
         await this.copyColor(message.color);
         return;
@@ -367,7 +404,7 @@ export class WorkspaceColorController implements vscode.Disposable {
     if (
       !state ||
       state.disabled ||
-      (!state.ownership.managed && !this.shouldAutoApply(state))
+      (!state.ownership.managed && !this.shouldAutoApply())
     ) {
       return;
     }
@@ -823,9 +860,16 @@ export class WorkspaceColorController implements vscode.Disposable {
 
   private readFlags(): ChromeFlags {
     const configuration = vscode.workspace.getConfiguration("workspaceColor");
+    const activityBarLocation = vscode.workspace
+      .getConfiguration("workbench")
+      .get<string>("activityBar.location");
     return {
       titleBar: configuration.get("titleBar", true),
-      activityBar: configuration.get("activityBar", true),
+      activityBar: resolveActivityBarFlag({
+        override: this.explicitBooleanSetting("activityBar"),
+        modernUi: this.modernUiValue(),
+        activityBarLocation,
+      }),
       statusBar: configuration.get("statusBar", true),
       commandCenter: configuration.get("commandCenter", true),
     };
@@ -836,8 +880,8 @@ export class WorkspaceColorController implements vscode.Disposable {
     return inspected?.workspaceFolderValue ?? inspected?.workspaceValue ?? inspected?.globalValue;
   }
 
-  private shouldAutoApply(state: WorkspaceLocalState): boolean {
-    return this.explicitBooleanSetting("autoApply") ?? state.legacyAutoApply;
+  private shouldAutoApply(): boolean {
+    return this.explicitBooleanSetting("autoApply") ?? true;
   }
 
   private currentSavedColor(): string | undefined {
@@ -952,7 +996,7 @@ export class WorkspaceColorController implements vscode.Disposable {
       stepped,
       applied,
       hasWorkspace,
-      autoApply: state ? this.shouldAutoApply(state) : false,
+      autoApply: this.shouldAutoApply(),
       highContrast,
       conflictCount: state?.ownership.blockedKeys.length ?? 0,
       modernUi: compatibility.mode === "modern",

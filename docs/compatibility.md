@@ -1,6 +1,6 @@
 # Compatibility and QA
 
-Evidence date: 2026-09-02
+Evidence date: 2026-09-03
 Release candidate: 0.1.0
 Minimum VS Code: 1.134.0
 
@@ -27,8 +27,8 @@ Minimum VS Code: 1.134.0
 | Ubuntu stable | Same Extension Host suite under Xvfb | CI lane configured |
 | macOS stable | Same Extension Host suite | CI lane configured |
 | Ubuntu Insiders | Same Extension Host suite | CI lane configured |
-| Unit tests | Identity, ownership, conflict, queue, colors, compatibility, panel parser, status, manifest | Local pass: 97 tests |
-| Installed VSIX | Isolated install, activation without write, command registration, explicit apply | Local pass on stable 1.136.1; CI package gate configured |
+| Unit tests | Identity, ownership, conflict, queue, colors, compatibility, panel parser, status, manifest | Local pass: 100 tests |
+| Installed VSIX | Isolated install, automatic activation apply, command registration, explicit reapply | Local pass on stable 1.136.1; CI package gate configured |
 | Media | Dimensions, alpha, deterministic rerender | Local pass: four files; release gate configured |
 | Performance | Hot paths, coalescing, bundle size, activation, three panel cycles | Local/CI budgets |
 
@@ -37,6 +37,7 @@ CI source: `.github/workflows/ci.yml`.
 ## Local rendered evidence
 
 - Dark Modern: full panel rendered in a VS Code 1.135.0 Extension Development Host.
+- Dark Modern UI on VS Code 1.136.1: all 55 icon-picker SVGs and the selected preview render at 16×16; Enter opens the picker and Escape closes it with focus restored.
 - Default High Contrast: suspension notice shown and chrome tones dimmed; controls remain readable.
 - Accessibility tree: 97 controls have names and no interactive node is unnamed.
 - Strict CSP: default deny, external bundled CSS/JavaScript, one cryptographic script nonce, no inline event handlers.
@@ -49,7 +50,7 @@ Light, High Contrast Light, full keyboard traversal, remote/virtual providers, p
 
 | Surface/state | Contract |
 | --- | --- |
-| Activity Bar left/right/top/bottom | Both `activityBar.*` and `activityBarTop.*` are generated when enabled |
+| Activity Bar left/right/top/bottom | Both key families are generated when enabled; without an override, Modern UI top/bottom defaults off and side/classic layouts default on |
 | Command center enabled/hidden | Keys remain safe when the UI is hidden; no command-center assumption |
 | Native/custom title bar | VS Code decides which declared title keys are visible |
 | Modern UI on | Title/activity/status borders omitted; limitations shown |

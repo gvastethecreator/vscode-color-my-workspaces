@@ -26,6 +26,11 @@ describe("STATUS_ICONS", () => {
     for (const id of STATUS_ICONS) {
       assert.equal(typeof STATUS_ICON_SVG[id], "string", id);
       assert.equal(STATUS_ICON_SVG[id]!.includes("<svg"), true, id);
+      assert.equal(
+        STATUS_ICON_SVG[id]!.includes('xmlns="http://www.w3.org/2000/svg"'),
+        true,
+        id,
+      );
     }
   });
 });

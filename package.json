@@ -86,6 +86,11 @@
         "category": "Color My Workspaces"
       },
       {
+        "command": "workspaceColor.setDefaults",
+        "title": "Set Defaults",
+        "category": "Color My Workspaces"
+      },
+      {
         "command": "workspaceColor.reapply",
         "title": "Reapply Color and Take Ownership",
         "category": "Color My Workspaces"
@@ -133,9 +138,9 @@
         },
         "workspaceColor.autoApply": {
           "type": "boolean",
-          "default": false,
+          "default": true,
           "scope": "window",
-          "description": "Reapply the color when this workspace opens. No workspace setting is written until you explicitly apply a color or enable this option."
+          "description": "Apply and reapply the derived or saved color when this workspace opens. Turn this off to require a manual apply."
         },
         "workspaceColor.identity": {
           "type": "string",
@@ -160,7 +165,7 @@
           "type": "boolean",
           "default": true,
           "scope": "window",
-          "description": "Color the activity bar, including its top or bottom placement."
+          "description": "Color the activity bar. Without an override, this is off for a top or bottom activity bar under experimental Modern UI and on otherwise."
         },
         "workspaceColor.statusBar": {
           "type": "boolean",

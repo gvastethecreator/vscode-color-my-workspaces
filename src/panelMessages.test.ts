@@ -11,6 +11,7 @@ describe("parsePanelMessage", () => {
   });
 
   it("rejects unknown fields, types, and oversized strings", () => {
+    assert.deepEqual(parsePanelMessage({ type: "setDefaults" }), { type: "setDefaults" });
     assert.equal(parsePanelMessage({ type: "ready", admin: true }), undefined);
     assert.equal(parsePanelMessage({ type: "setStepped", enabled: "true" }), undefined);
     assert.equal(parsePanelMessage({ type: "setLabel", label: "x".repeat(81) }), undefined);

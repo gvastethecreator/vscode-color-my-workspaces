@@ -66,9 +66,9 @@ describe("STATUS_CHIP_TEXT", () => {
 });
 
 describe("unified status presentation", () => {
-  it("uses one stable low-priority item contract", () => {
+  it("uses one stable maximum-priority item contract", () => {
     assert.equal(STATUS_ITEM_ID, "workspaceColor.status");
-    assert.equal(STATUS_ITEM_PRIORITY, 100);
+    assert.equal(STATUS_ITEM_PRIORITY, Number.MAX_VALUE);
   });
 
   it("keeps a textual or icon identity when custom label and icon are hidden", () => {

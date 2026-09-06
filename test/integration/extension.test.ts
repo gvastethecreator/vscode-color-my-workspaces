@@ -7,7 +7,7 @@ declare function test(name: string, callback: () => void | Promise<void>): void;
 const EXTENSION_ID = "gvastethecreator.color-my-workspaces";
 
 suite("Color My Workspaces extension host", () => {
-  test("activates without writing workspace color settings", async () => {
+  test("automatically applies a derived color on first activation", async () => {
     const extension = vscode.extensions.getExtension(EXTENSION_ID);
     assert.ok(extension, `${EXTENSION_ID} is installed in the test host`);
     const activationStarted = performance.now();
@@ -19,7 +19,8 @@ suite("Color My Workspaces extension host", () => {
     const colors = vscode.workspace
       .getConfiguration("workbench")
       .inspect<Record<string, unknown>>("colorCustomizations")?.workspaceValue;
-    assert.equal(colors, undefined);
+    assert.ok(colors);
+    assert.match(String(colors["titleBar.activeBackground"]), /^#[0-9a-f]{6}$/);
     assert.equal(
       vscode.workspace.getConfiguration("workspaceColor").inspect("color")?.workspaceValue,
       undefined,
@@ -36,6 +37,7 @@ suite("Color My Workspaces extension host", () => {
       "workspaceColor.surprise",
       "workspaceColor.reset",
       "workspaceColor.resetSettings",
+      "workspaceColor.setDefaults",
       "workspaceColor.reapply",
     ]) {
       assert.ok(commands.includes(command), command);
@@ -44,6 +46,9 @@ suite("Color My Workspaces extension host", () => {
 
   test("applies a derived color while preserving unrelated and baseline values", async () => {
     const workbench = vscode.workspace.getConfiguration("workbench");
+    await withWarningChoice("Clear workspace color", () =>
+      vscode.commands.executeCommand("workspaceColor.reset"),
+    );
     await workbench.update(
       "colorCustomizations",
       {

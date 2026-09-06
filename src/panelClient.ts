@@ -452,7 +452,13 @@ for (const input of document.querySelectorAll<HTMLInputElement>("[data-flag]")) 
 for (const button of document.querySelectorAll<HTMLButtonElement>("[data-action]")) {
   button.addEventListener("click", () => {
     const action = button.dataset.action;
-    if (action === "applyFromFolder" || action === "surprise" || action === "reset" || action === "resetSettings") {
+    if (
+      action === "applyFromFolder" ||
+      action === "surprise" ||
+      action === "reset" ||
+      action === "resetSettings" ||
+      action === "setDefaults"
+    ) {
       vscode.postMessage({ type: action });
     }
   });

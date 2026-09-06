@@ -5,7 +5,7 @@ import { spawnSync } from "node:child_process";
 import sharp from "sharp";
 
 const deterministicOutputs = [
-  ["media/icon.png", 128, 128],
+  ["media/icon.png", 256, 256],
   ["media/icon-512.png", 512, 512],
   ["media/social-preview.png", 1280, 420],
 ];

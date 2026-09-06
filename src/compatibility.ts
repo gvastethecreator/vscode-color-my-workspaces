@@ -44,3 +44,16 @@ export function describeChromeCompatibility(compatibility: ChromeCompatibility):
   }
   return compatibility.limitations.join(" ");
 }
+
+export function resolveActivityBarFlag(input: {
+  override: boolean | undefined;
+  modernUi: boolean | undefined;
+  activityBarLocation: string | undefined;
+}): boolean {
+  if (input.override !== undefined) {
+    return input.override;
+  }
+  const topOrBottom =
+    input.activityBarLocation === "top" || input.activityBarLocation === "bottom";
+  return !(input.modernUi === true && topOrBottom);
+}

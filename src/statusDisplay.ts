@@ -4,7 +4,7 @@ import { truncateLabel } from "./identity.ts";
 export const STATUS_CLICK_HINT = "Click to change color";
 export const STATUS_CHIP_TEXT = "$(circle-filled)";
 export const STATUS_ITEM_ID = "workspaceColor.status";
-export const STATUS_ITEM_PRIORITY = 100;
+export const STATUS_ITEM_PRIORITY = Number.MAX_VALUE;
 
 export type StatusPresentation = {
   visible: boolean;

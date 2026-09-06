@@ -20,6 +20,7 @@ export type PanelMessage =
   | { type: "surprise" }
   | { type: "reset" }
   | { type: "resetSettings" }
+  | { type: "setDefaults" }
   | { type: "copyHex"; color: string }
   | { type: "setSeparateBars"; enabled: boolean }
   | { type: "openUrl"; url: typeof SUPPORT_URL };
@@ -34,6 +35,7 @@ export function parsePanelMessage(value: unknown): PanelMessage | undefined {
     case "surprise":
     case "reset":
     case "resetSettings":
+    case "setDefaults":
       return exactKeys(value, ["type"]) ? { type: value.type } : undefined;
     case "setColor":
     case "copyHex": {

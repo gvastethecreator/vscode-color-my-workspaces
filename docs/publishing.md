@@ -4,6 +4,8 @@ Extension id: `gvastethecreator.color-my-workspaces`.
 
 Publishing is an operator action. Building or verifying a VSIX does not authorize tagging, pushing, publishing, deprecating, or unpublishing.
 
+The **Release** workflow starts from **Actions → Release → Run workflow**. Default input `artifact-only` does not publish. A tag push does not publish.
+
 ## Release candidate
 
 1. Set `package.json` to the intended SemVer.
@@ -35,23 +37,22 @@ Remove-Item Env:VSCODE_TEST_VERSION
 6. Review `git diff`, the VSIX file list, and the launch checklist.
 7. Obtain explicit commit/push/merge/tag/publication approval.
 
-## GitHub Actions release
+## GitHub Actions
 
-A `v<package-version>` tag starts `.github/workflows/release.yml`.
+1. Run **Release** with `artifact-only` from `main`.
+2. Confirm the uploaded VSIX hash.
+3. After approval, run one of `github-release`, `vscode-marketplace`, or `open-vsx`.
+4. Run one registry at a time.
 
-The release workflow:
+Environments, limited to `main`:
 
-- checks tag/version/changelog consistency;
-- verifies deterministic media on Windows before the build;
-- runs unit, types, performance, integration, package inspection, and installed-VSIX smoke gates on Ubuntu;
-- uploads one 90-day VSIX artifact.
+- `github-release` uses `GITHUB_TOKEN`.
+- `vscode-marketplace` uses `VSCE_PAT`.
+- `open-vsx` uses `OVSX_PAT`.
 
-Marketplace and Open VSX publication are independent jobs and environments. Configure:
+Do not store those tokens until the owner asks to publish. A registry failure must not republish to the other registry.
 
-- `VSCE_PAT` in the `vscode-marketplace` environment;
-- `OVSX_PAT` in the `open-vsx` environment.
-
-Use required reviewers on both environments. A registry failure must not republish or mutate the other registry's artifact.
+`pnpm run check:release -- --release` runs only when the input is not `artifact-only`. That mode requires a dated changelog entry.
 
 ## Manual fallback
 
