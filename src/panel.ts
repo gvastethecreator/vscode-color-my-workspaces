@@ -174,8 +174,8 @@ function renderHtml(context: vscode.ExtensionContext, webview: vscode.Webview): 
 
     <footer>
       <div class="footer-actions">
-        <button type="button" class="button secondary" data-action="resetSettings" id="resetSettings">Reset settings</button>
-        <button type="button" class="button secondary" data-action="setDefaults" id="setDefaults">Set defaults</button>
+        <button type="button" class="button secondary" data-action="resetSettings" id="resetSettings">Reset to inheritance...</button>
+        <button type="button" class="button secondary" data-action="setDefaults" id="setDefaults">Apply factory defaults...</button>
       </div>
       <p class="support">
         <a href="${SUPPORT_URL}" id="supportLink">

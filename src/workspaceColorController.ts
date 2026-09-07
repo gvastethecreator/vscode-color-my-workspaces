@@ -1,3 +1,4 @@
+import { changeSettings } from "./settingsActions.ts";
 import * as vscode from "vscode";
 import {
   ALL_CHROME_ELEMENTS,
@@ -53,6 +54,7 @@ import {
   statusChipColor,
 } from "./statusDisplay.ts";
 import { SerializedWriteQueue } from "./writeQueue.ts";
+import { ColorFavorites, validFavoriteName } from "./favorites.ts";
 
 const LOCAL_STATE_KEY = "workspaceColor.localState";
 const LEGACY_DISABLED_KEY = "workspaceColor.disabled";
@@ -144,6 +146,12 @@ export class WorkspaceColorController implements vscode.Disposable {
       return;
     }
     switch (action.type) {
+      case "favorites":
+        await this.runFavorites();
+        return;
+      case "saveFavorite":
+        await this.runSaveFavorite();
+        return;
       case "color":
         await this.applySelectedColor(action.color);
         return;
@@ -174,6 +182,46 @@ export class WorkspaceColorController implements vscode.Disposable {
       case "reset":
         await this.runClear();
         return;
+    }
+  }
+
+  async runSaveFavorite(): Promise<void> {
+    const color = this.currentColor(await this.ensureLocalState());
+    if (!color) {
+      void vscode.window.showInformationMessage("Choose a workspace color before saving a favorite.");
+      return;
+    }
+    const name = await vscode.window.showInputBox({ title: "Save Favorite Color", prompt: `Name for ${color}`, validateInput: (value) => validFavoriteName(value) ? undefined : "Use a name between 1 and 64 characters." });
+    if (name === undefined) return;
+    try {
+      await new ColorFavorites(this.context.globalStorageUri.fsPath).save(name, color);
+      void vscode.window.showInformationMessage("Favorite saved.");
+    } catch (error) {
+      void vscode.window.showErrorMessage(error instanceof Error ? error.message : "Could not save the favorite.");
+    }
+  }
+
+  async runFavorites(): Promise<void> {
+    const store = new ColorFavorites(this.context.globalStorageUri.fsPath);
+    try {
+      const favorites = await store.read();
+      if (!favorites.length) {
+        void vscode.window.showInformationMessage("No favorite colors yet. Use Save Current Color as Favorite.");
+        return;
+      }
+      const choice = await vscode.window.showQuickPick(favorites.map((favorite) => ({ label: favorite.name, description: favorite.color, favorite })), { title: "Favorite Colors" });
+      if (!choice) return;
+      const action = await vscode.window.showQuickPick(["Apply to Workspace", "Rename", "Delete"], { title: choice.favorite.name });
+      if (action === "Apply to Workspace") {
+        if (this.requireWorkspace()) await this.applySelectedColor(choice.favorite.color);
+      } else if (action === "Rename") {
+        const name = await vscode.window.showInputBox({ title: "Rename Favorite", value: choice.favorite.name, validateInput: (value) => validFavoriteName(value) ? undefined : "Use a name between 1 and 64 characters." });
+        if (name !== undefined) await store.update(choice.favorite, name);
+      } else if (action === "Delete") {
+        await store.update(choice.favorite);
+      }
+    } catch (error) {
+      void vscode.window.showErrorMessage(error instanceof Error ? error.message : "Could not update favorites.");
     }
   }
 
@@ -246,62 +294,18 @@ export class WorkspaceColorController implements vscode.Disposable {
   }
 
   async runResetSettings(): Promise<void> {
-    if (!this.requireWorkspace()) {
-      return;
-    }
-    const confirm = "Reset settings";
-    const choice = await vscode.window.showWarningMessage(
-      "Reset Color My Workspaces settings for this workspace, restore captured colors, and keep unrelated or externally changed workbench colors?",
-      { modal: true },
-      confirm,
-    );
-    if (choice !== confirm) {
-      return;
-    }
     await this.writes.enqueue(async () => {
-      const cleared = await this.clearNow(false);
-      if (!cleared) {
-        return;
+      if (await changeSettings("workspaceColor", "Color My Workspaces", DEFAULT_SETTING_KEYS, "inherit", false)) {
+        await this.refreshNow();
       }
-      await this.restoreModernUiChange(false);
-      const configuration = vscode.workspace.getConfiguration("workspaceColor");
-      for (const key of WORKSPACE_COLOR_SETTING_KEYS) {
-        await configuration.update(key, undefined, TARGET);
-      }
-      const identity = this.currentWorkspaceIdentity();
-      if (identity) {
-        const reset = createWorkspaceLocalState(identity, this.currentLegacyIdentity());
-        reset.disabled = true;
-        reset.onboardingCompleted = true;
-        await this.saveLocalState(reset);
-      }
-      await this.refreshPresentation();
     });
   }
 
   async runSetDefaults(): Promise<void> {
-    const confirm = "Set defaults";
-    const choice = await vscode.window.showWarningMessage(
-      "Set Color My Workspaces defaults for all workspaces? This workspace color is not changed.",
-      { modal: true },
-      confirm,
-    );
-    if (choice !== confirm) {
-      return;
-    }
     await this.writes.enqueue(async () => {
-      const configuration = vscode.workspace.getConfiguration("workspaceColor");
-      const targets: vscode.ConfigurationTarget[] = [vscode.ConfigurationTarget.Global];
-      if (this.hasWorkspace()) {
-        targets.push(vscode.ConfigurationTarget.Workspace);
+      if (await changeSettings("workspaceColor", "Color My Workspaces", DEFAULT_SETTING_KEYS, "defaults", false)) {
+        await this.refreshNow();
       }
-      for (const key of DEFAULT_SETTING_KEYS) {
-        const value = configuration.inspect(key)?.defaultValue;
-        for (const target of targets) {
-          await configuration.update(key, value, target);
-        }
-      }
-      await this.refreshNow();
     });
   }
 

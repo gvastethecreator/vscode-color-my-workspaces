@@ -246,7 +246,7 @@ function applyState(state: PanelState): void {
   applyStatusPreview(state.showStatusBarLabel, state.showStatusBarIcon);
 
   clearColor.disabled = !state.applied;
-  resetSettings.disabled = !state.hasWorkspace;
+  resetSettings.disabled = false;
   copyHex.disabled = !state.hasWorkspace || !validHex(state.color);
   autoApply.disabled = !state.hasWorkspace;
   separateBars.disabled = !state.hasWorkspace;

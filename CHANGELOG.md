@@ -2,6 +2,10 @@
 
 All notable changes to Color My Workspaces are documented in this file.
 
+## [Unreleased]
+
+- Favorite Colors supports up to 24 named colors across projects in the current user's extension storage. Save does not apply a color. Apply uses the existing color ownership controller. Rename and Delete reject stale selections from another window. An exclusive storage lock and atomic file replacement prevent concurrent windows from overwriting changes. A crashed writer can leave a lock; close all VS Code windows before removing that lock from extension storage. Preferences exclude the current color, label and identity. Clear Color remains the operation that restores owned workbench colors.
+
 ## [0.1.0] - Unreleased
 
 ### Added

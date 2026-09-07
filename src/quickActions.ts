@@ -8,6 +8,8 @@ export type StatusAction =
   | { type: "folder" }
   | { type: "copy" }
   | { type: "settings" }
+  | { type: "favorites" }
+  | { type: "saveFavorite" }
   | { type: "toggleLabel" }
   | { type: "toggleIcon" }
   | { type: "pickIcon" }
@@ -57,6 +59,7 @@ export function statusActionItems(input: {
   conflictCount?: number;
 }): ActionItem[] {
   const items: ActionItem[] = [
+    { label: "$(star-full) Favorite Colors...", action: { type: "favorites" } },
     { label: "$(gear) Color My Workspaces Settings", action: { type: "settings" } },
     {
       label: input.showStatusBarLabel ? "$(eye-closed) Hide status bar name" : "$(eye) Show status bar name",
@@ -71,6 +74,7 @@ export function statusActionItems(input: {
     { label: "$(folder) Use folder color", action: { type: "folder" } },
   ];
   if (input.currentColor) {
+    items.push({ label: "$(star-add) Save Current Color as Favorite...", action: { type: "saveFavorite" } });
     items.push({
       label: "$(copy) Copy color",
       description: input.currentColor,

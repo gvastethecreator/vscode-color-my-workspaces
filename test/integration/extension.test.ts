@@ -106,24 +106,31 @@ suite("Color My Workspaces extension host", () => {
     );
   });
 
-  test("reset restores colors and removes extension workspace settings", async () => {
+  test("settings actions change one scope and preserve workspace identity", async () => {
     await vscode.commands.executeCommand("workspaceColor.applyFromFolder");
     await vscode.workspace
       .getConfiguration("workspaceColor")
       .update("label", "Integration fixture", vscode.ConfigurationTarget.Workspace);
 
-    await withWarningChoice("Reset settings", () =>
-      vscode.commands.executeCommand("workspaceColor.resetSettings"),
-    );
-
     const configuration = vscode.workspace.getConfiguration("workspaceColor");
-    assert.equal(configuration.inspect("color")?.workspaceValue, undefined);
-    assert.equal(configuration.inspect("label")?.workspaceValue, undefined);
-    const colors = vscode.workspace
-      .getConfiguration("workbench")
-      .inspect<Record<string, string>>("colorCustomizations")?.workspaceValue;
-    assert.equal(colors?.["titleBar.activeBackground"], "#aa0000");
-    assert.equal(colors?.["statusBar.background"], "#ff00ff");
+    const color = configuration.inspect("color")?.workspaceValue;
+    await configuration.update("showStatusBarLabel", false, vscode.ConfigurationTarget.Global);
+    await configuration.update("showStatusBarLabel", true, vscode.ConfigurationTarget.Workspace);
+    const originalPick = vscode.window.showQuickPick;
+    vscode.window.showQuickPick = (async (items: readonly vscode.QuickPickItem[]) => items.find((item) => item.label === "Workspace")) as typeof vscode.window.showQuickPick;
+    try {
+      await withWarningChoice("Reset to Inherited Settings", () => vscode.commands.executeCommand("workspaceColor.resetSettings"));
+      assert.equal(configuration.inspect("showStatusBarLabel")?.globalValue, false);
+      assert.equal(configuration.inspect("showStatusBarLabel")?.workspaceValue, undefined);
+      assert.equal(configuration.inspect("color")?.workspaceValue, color);
+      assert.equal(configuration.inspect("label")?.workspaceValue, "Integration fixture");
+      await withWarningChoice("Apply Factory Defaults", () => vscode.commands.executeCommand("workspaceColor.setDefaults"));
+      assert.equal(configuration.inspect("showStatusBarLabel")?.globalValue, false);
+      assert.equal(configuration.inspect("showStatusBarLabel")?.workspaceValue, configuration.inspect("showStatusBarLabel")?.defaultValue);
+    } finally {
+      vscode.window.showQuickPick = originalPick;
+      await configuration.update("showStatusBarLabel", undefined, vscode.ConfigurationTarget.Global);
+    }
   });
 
   test("opens and disposes the secured settings panel", async () => {

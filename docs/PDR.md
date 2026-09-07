@@ -62,9 +62,9 @@ The user can:
 
 Clear restores intact baselines and removes the saved color. It preserves unmanaged and externally changed keys.
 
-Reset does the same restoration, then removes all `workspaceColor.*` workspace values and restores a Modern UI value changed by the extension when ownership is still intact.
+Reset to Inherited Settings removes explicit preference values in the chosen scope. Use Clear Color to restore owned workbench colors.
 
-Set defaults writes factory values for Status Bar, surface, and auto-apply settings to user settings and to the current workspace. Color, label, and identity stay local.
+Apply Factory Defaults writes preference values in one chosen scope. Color, label, and identity stay local.
 
 ## Commands
 
@@ -182,3 +182,14 @@ The release runtime is bundled. There are no production dependencies.
 ## Release boundary
 
 Implementation may produce and verify the 0.1.0 VSIX without registry credentials. Tagging, publishing, merging, unpublishing, or deprecating remain explicit operator actions.
+
+## Accepted PR implementation
+
+Favorite Colors supports up to 24 named colors across projects in the current user's extension storage. Save does not apply a color. Apply uses the existing color ownership controller. Rename and Delete reject stale selections from another window. An exclusive storage lock and atomic file replacement prevent concurrent windows from overwriting changes. A crashed writer can leave a lock; close all VS Code windows before removing that lock from extension storage. Preferences exclude the current color, label and identity. Clear Color remains the operation that restores owned workbench colors.
+
+The two settings actions first ask for one scope. Apply Factory Defaults writes manifest defaults only in that scope. Reset to Inherited Settings removes explicit values only there. Both preserve language overrides and settings in other scopes. User and Workspace are available; Folder is available only for resource settings in a workspace file. Cancelling either picker or confirmation makes no change. A failed write reports how many keys changed; it does not claim an atomic settings transaction.
+
+Command identifiers:
+
+- `workspaceColor.favorites`: Favorite Colors...
+- `workspaceColor.saveFavorite`: Save Current Color as Favorite...

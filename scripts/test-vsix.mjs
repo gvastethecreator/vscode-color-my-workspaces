@@ -44,7 +44,7 @@ try {
     ],
   });
 } finally {
-  await rm(root, { recursive: true, force: true });
+  await rm(root, { recursive: true, force: true, maxRetries: 10, retryDelay: 200 });
 }
 
 async function newestVsix() {

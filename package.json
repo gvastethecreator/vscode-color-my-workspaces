@@ -82,12 +82,12 @@
       },
       {
         "command": "workspaceColor.resetSettings",
-        "title": "Reset Settings",
+        "title": "Reset to Inherited Settings...",
         "category": "Color My Workspaces"
       },
       {
         "command": "workspaceColor.setDefaults",
-        "title": "Set Defaults",
+        "title": "Apply Factory Defaults...",
         "category": "Color My Workspaces"
       },
       {
@@ -98,6 +98,16 @@
       {
         "command": "workspaceColor.openPanel",
         "title": "Open Color My Workspaces Settings",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.favorites",
+        "title": "Favorite Colors...",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.saveFavorite",
+        "title": "Save Current Color as Favorite...",
         "category": "Color My Workspaces"
       }
     ],

@@ -27,6 +27,8 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
   register("workspaceColor.reset", () => controller.runClear());
   register("workspaceColor.resetSettings", () => controller.runResetSettings());
   register("workspaceColor.setDefaults", () => controller.runSetDefaults());
+  register("workspaceColor.favorites", () => controller.runFavorites());
+  register("workspaceColor.saveFavorite", () => controller.runSaveFavorite());
   register("workspaceColor.reapply", () => controller.runReapply());
 
   context.subscriptions.push(
