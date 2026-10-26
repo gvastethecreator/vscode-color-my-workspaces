@@ -212,7 +212,7 @@
     "watch": "node esbuild.js --watch",
     "package": "tsc --noEmit && node esbuild.js --production",
     "icons": "node scripts/render-icons.mjs",
-    "vsix": "pnpm run package && vsce package --no-dependencies",
+    "vsix": "vsce package --no-dependencies",
     "inspect:vsix": "node scripts/inspect-vsix.mjs",
     "test:vsix": "pnpm run vsix && pnpm run inspect:vsix && node scripts/test-vsix.mjs",
     "check:media": "node scripts/check-media.mjs",

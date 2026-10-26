@@ -1,13 +1,13 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-09-07T03:20:40Z",
-  "generated_from_commit": "251632d4b182be5299a3f1084503c5a780468dd3",
+  "generated_at": "2026-10-26T04:43:25Z",
+  "generated_from_commit": "43093886b595cec3b922ecbeeb2b753f48a45eba",
   "scope": [
     "."
   ],
   "analysis": {
     "version": "syntax-1",
-    "digest": "3c79d1c345c40f78e72d86e76fcdb0c240c137eb03778015ce78f994b43e3ccf"
+    "digest": "aac5588c813568478eb34b9cb090e19685ad183efe6d8b3496f261834a7c0f44"
   },
   "inventory": {
     "policy": {
@@ -61,8 +61,8 @@
         "path": "package.json",
         "origin": "tracked",
         "state": "present",
-        "digest": "cbb0d614105d34fb6863d3d2aedcc311a0843ff0dbd30332d7cfa8a7c4987b48",
-        "size": 8057
+        "digest": "cc2afd6edb8e5804893dd5e42782c4a3fdba658226a2821c70454484a5306bd8",
+        "size": 7988
       },
       {
         "path": "scripts/build-integration.mjs",
@@ -101,7 +101,7 @@
       },
       {
         "path": "scripts/release-artifact.mjs",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
         "size": 5219
@@ -178,14 +178,14 @@
       },
       {
         "path": "src/favorites.test.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
         "size": 1498
       },
       {
         "path": "src/favorites.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
         "size": 4142
@@ -332,14 +332,14 @@
       },
       {
         "path": "src/releaseArtifact.test.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
         "size": 2234
       },
       {
         "path": "src/settingsActions.ts",
-        "origin": "untracked",
+        "origin": "tracked",
         "state": "present",
         "digest": "2d9238bfb5bac72260aefe2e61375e542b733efe4b0123de61798144ac6b8ab1",
         "size": 2810
@@ -376,8 +376,8 @@
         "path": "src/workspaceColorController.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
-        "size": 37340
+        "digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
+        "size": 37825
       },
       {
         "path": "src/writeQueue.test.ts",
@@ -429,7 +429,7 @@
         "size": 399
       }
     ],
-    "digest": "682c0a0223d52377cdf6408f98b1d31b5d482fd2fe4d4e116f352078562a7625"
+    "digest": "cac8bfd20dc521168282f49fd54d06b0f476d4406f46d1ccf1380ebdc6ee02cf"
   },
   "coverage": {
     "discovered_files": 90,
@@ -7603,7 +7603,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "json-manifest",
-            "source_digest": "cbb0d614105d34fb6863d3d2aedcc311a0843ff0dbd30332d7cfa8a7c4987b48",
+            "source_digest": "cc2afd6edb8e5804893dd5e42782c4a3fdba658226a2821c70454484a5306bd8",
             "kind": "file"
           }
         ]
@@ -14265,7 +14265,7 @@
             "start_line": 59,
             "end_line": 59,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "definition"
           },
           {
@@ -14274,7 +14274,7 @@
             "start_line": 60,
             "end_line": 60,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "definition"
           },
           {
@@ -14283,7 +14283,7 @@
             "start_line": 61,
             "end_line": 61,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "definition"
           }
         ]
@@ -20596,7 +20596,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "external:javascript:vscode"
           }
@@ -20616,10 +20616,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "buildChromeColors(color, flagsToElements(this.readFlags()), {\n      stepped: vscode.workspace.getConfiguration(\"workspaceColor\").get(\"stepped\", true),\n      modernUi: compatibility.mode === \"modern\",\n    })",
-            "start_line": 859,
-            "end_line": 862,
+            "start_line": 867,
+            "end_line": 870,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/chrome.ts",
             "target_symbol": "buildChromeColors"
@@ -20627,10 +20627,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "flagsToElements(this.readFlags())",
-            "start_line": 859,
-            "end_line": 859,
+            "start_line": 867,
+            "end_line": 867,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/chrome.ts",
             "target_symbol": "flagsToElements"
@@ -20654,7 +20654,7 @@
             "start_line": 3,
             "end_line": 8,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/chrome.ts"
           }
@@ -20674,10 +20674,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "colorFromIdentity(identity)",
-            "start_line": 248,
-            "end_line": 248,
+            "start_line": 249,
+            "end_line": 249,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/color.ts",
             "target_symbol": "colorFromIdentity"
@@ -20685,10 +20685,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "randomWorkspaceColor()",
-            "start_line": 257,
-            "end_line": 257,
+            "start_line": 258,
+            "end_line": 258,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/color.ts",
             "target_symbol": "randomWorkspaceColor"
@@ -20696,10 +20696,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "normalizeHex(color)",
-            "start_line": 426,
-            "end_line": 426,
+            "start_line": 427,
+            "end_line": 427,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/color.ts",
             "target_symbol": "normalizeHex"
@@ -20723,7 +20723,7 @@
             "start_line": 9,
             "end_line": 9,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/color.ts"
           }
@@ -20743,10 +20743,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "resolveActivityBarFlag({\n        override: this.explicitBooleanSetting(\"activityBar\"),\n        modernUi: this.modernUiValue(),\n        activityBarLocation,\n      })",
-            "start_line": 872,
-            "end_line": 876,
+            "start_line": 880,
+            "end_line": 884,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/compatibility.ts",
             "target_symbol": "resolveActivityBarFlag"
@@ -20754,10 +20754,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "detectChromeCompatibility({\n      modernUi: this.modernUiValue(),\n      activityBarLocation: vscode.workspace\n        .getConfiguration(\"workbench\")\n        .get<string>(\"activityBar.location\"),\n    })",
-            "start_line": 970,
-            "end_line": 975,
+            "start_line": 978,
+            "end_line": 983,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/compatibility.ts",
             "target_symbol": "detectChromeCompatibility"
@@ -20765,10 +20765,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "describeChromeCompatibility(compatibility)",
-            "start_line": 1007,
-            "end_line": 1007,
+            "start_line": 1015,
+            "end_line": 1015,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/compatibility.ts",
             "target_symbol": "describeChromeCompatibility"
@@ -20792,7 +20792,7 @@
             "start_line": 10,
             "end_line": 14,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/compatibility.ts"
           }
@@ -20812,10 +20812,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "validFavoriteName(value)",
-            "start_line": 194,
-            "end_line": 194,
+            "start_line": 195,
+            "end_line": 195,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/favorites.ts",
             "target_symbol": "validFavoriteName"
@@ -20823,10 +20823,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "validFavoriteName(value)",
-            "start_line": 218,
-            "end_line": 218,
+            "start_line": 219,
+            "end_line": 219,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/favorites.ts",
             "target_symbol": "validFavoriteName"
@@ -20850,7 +20850,7 @@
             "start_line": 57,
             "end_line": 57,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/favorites.ts"
           }
@@ -20870,10 +20870,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "parseCodiconId(raw)",
-            "start_line": 625,
-            "end_line": 625,
+            "start_line": 631,
+            "end_line": 631,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/icons.ts",
             "target_symbol": "parseCodiconId"
@@ -20881,10 +20881,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "parseCodiconId(vscode.workspace.getConfiguration(\"workspaceColor\").get<string>(\"icon\"))",
-            "start_line": 956,
-            "end_line": 956,
+            "start_line": 964,
+            "end_line": 964,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/icons.ts",
             "target_symbol": "parseCodiconId"
@@ -20908,7 +20908,7 @@
             "start_line": 15,
             "end_line": 15,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/icons.ts"
           }
@@ -20928,10 +20928,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "workspaceIdentity({\n      workspaceFile: vscode.workspace.workspaceFile\n        ? uriInput(vscode.workspace.workspaceFile)\n        : undefined,\n      folders: (vscode.workspace.workspaceFolders ?? []).map((folder) => uriInput(folder.uri)),\n      override,\n      platform: process.platform === \"win32\" ? \"win32\" : \"posix\",\n    })",
-            "start_line": 910,
-            "end_line": 917,
+            "start_line": 918,
+            "end_line": 925,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/identity.ts",
             "target_symbol": "workspaceIdentity"
@@ -20939,10 +20939,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "legacyWorkspaceIdentity({\n      workspaceFile: vscode.workspace.workspaceFile?.fsPath,\n      folders: (vscode.workspace.workspaceFolders ?? []).map((folder) => folder.uri.fsPath),\n    })",
-            "start_line": 921,
-            "end_line": 924,
+            "start_line": 929,
+            "end_line": 932,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/identity.ts",
             "target_symbol": "legacyWorkspaceIdentity"
@@ -20950,10 +20950,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "projectDisplayName({\n      customLabel: this.customLabel(),\n      workspaceName: vscode.workspace.name,\n      folders: (vscode.workspace.workspaceFolders ?? []).map((folder) => uriInput(folder.uri)),\n    })",
-            "start_line": 928,
-            "end_line": 932,
+            "start_line": 936,
+            "end_line": 940,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/identity.ts",
             "target_symbol": "projectDisplayName"
@@ -20977,7 +20977,7 @@
             "start_line": 16,
             "end_line": 21,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/identity.ts"
           }
@@ -20997,10 +20997,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "parseWorkspaceLocalState(stored, identity, legacyIdentity)",
-            "start_line": 801,
-            "end_line": 801,
+            "start_line": 809,
+            "end_line": 809,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/localState.ts",
             "target_symbol": "parseWorkspaceLocalState"
@@ -21008,10 +21008,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "rebindWorkspaceLocalState(stored, identity, legacyIdentity)",
-            "start_line": 811,
-            "end_line": 811,
+            "start_line": 819,
+            "end_line": 819,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/localState.ts",
             "target_symbol": "rebindWorkspaceLocalState"
@@ -21019,10 +21019,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "migrateLegacyWorkspaceState({\n      workspaceIdentity: identity,\n      legacyIdentity,\n      disabled: this.context.workspaceState.get<boolean>(LEGACY_DISABLED_KEY) === true,\n      previousColor: this.context.workspaceState.get<string>(LEGACY_PREVIOUS_COLOR_KEY),\n      legacyColor,\n      current: this.readColorCustomizations(),\n      expectedLegacyColors: legacyColor ? this.buildCurrentChrome(legacyColor) : undefined,\n      capturedAt: new Date().toISOString(),\n    })",
-            "start_line": 821,
-            "end_line": 830,
+            "start_line": 829,
+            "end_line": 838,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/localState.ts",
             "target_symbol": "migrateLegacyWorkspaceState"
@@ -21046,7 +21046,7 @@
             "start_line": 22,
             "end_line": 28,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/localState.ts"
           }
@@ -21066,10 +21066,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "unblockManagedGroups(latest.ownership, ALL_CHROME_ELEMENTS)",
-            "start_line": 338,
-            "end_line": 338,
+            "start_line": 339,
+            "end_line": 339,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/ownership.ts",
             "target_symbol": "unblockManagedGroups"
@@ -21077,10 +21077,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "unblockManagedGroups(state.ownership, ALL_CHROME_ELEMENTS)",
-            "start_line": 435,
-            "end_line": 435,
+            "start_line": 436,
+            "end_line": 436,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/ownership.ts",
             "target_symbol": "unblockManagedGroups"
@@ -21088,10 +21088,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "planManagedColorApply({\n      current: this.readColorCustomizations(),\n      desired,\n      state: originalOwnership,\n      capturedAt: new Date().toISOString(),\n      forceConflicts: options.forceConflicts,\n    })",
-            "start_line": 455,
-            "end_line": 461,
+            "start_line": 456,
+            "end_line": 462,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/ownership.ts",
             "target_symbol": "planManagedColorApply"
@@ -21115,7 +21115,7 @@
             "start_line": 29,
             "end_line": 39,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/ownership.ts"
           }
@@ -21138,7 +21138,7 @@
             "start_line": 40,
             "end_line": 40,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/palette.ts"
           }
@@ -21158,10 +21158,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "openColorPanel(\n      this.context,\n      () => this.panelState(),\n      (message) => this.handlePanelMessage(message),\n    )",
-            "start_line": 125,
-            "end_line": 129,
+            "start_line": 126,
+            "end_line": 130,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/panel.ts",
             "target_symbol": "openColorPanel"
@@ -21169,10 +21169,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "postPanelState(this.panelState())",
-            "start_line": 349,
-            "end_line": 349,
+            "start_line": 350,
+            "end_line": 350,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/panel.ts",
             "target_symbol": "postPanelState"
@@ -21180,10 +21180,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "postPanelState(this.panelState())",
-            "start_line": 1034,
-            "end_line": 1034,
+            "start_line": 1042,
+            "end_line": 1042,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/panel.ts",
             "target_symbol": "postPanelState"
@@ -21207,7 +21207,7 @@
             "start_line": 41,
             "end_line": 41,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/panel.ts"
           }
@@ -21230,7 +21230,7 @@
             "start_line": 42,
             "end_line": 42,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/panelMessages.ts"
           }
@@ -21250,10 +21250,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "parseStatusBarClick(\n      vscode.workspace.getConfiguration(\"workspaceColor\").get(\"statusBarClick\"),\n    )",
-            "start_line": 960,
-            "end_line": 962,
+            "start_line": 968,
+            "end_line": 970,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/panelState.ts",
             "target_symbol": "parseStatusBarClick"
@@ -21261,10 +21261,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "chromeTones(color, stepped)",
-            "start_line": 991,
-            "end_line": 991,
+            "start_line": 999,
+            "end_line": 999,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/panelState.ts",
             "target_symbol": "chromeTones"
@@ -21288,7 +21288,7 @@
             "start_line": 43,
             "end_line": 48,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/panelState.ts"
           }
@@ -21308,10 +21308,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "pickStatusAction({\n      palette: PALETTE,\n      currentColor: this.currentColor(state),\n      showStatusBarLabel: this.showStatusBarLabel(),\n      showStatusBarIcon: this.showStatusBarIcon(),\n      applied: Boolean(state?.ownership.managed && !state.disabled),\n      conflictCount: state?.ownership.blockedKeys.length ?? 0,\n    })",
-            "start_line": 137,
-            "end_line": 144,
+            "start_line": 138,
+            "end_line": 145,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/quickActions.ts",
             "target_symbol": "pickStatusAction"
@@ -21319,10 +21319,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "pickPaletteColor(PALETTE, this.currentColor(state))",
-            "start_line": 233,
-            "end_line": 233,
+            "start_line": 234,
+            "end_line": 234,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/quickActions.ts",
             "target_symbol": "pickPaletteColor"
@@ -21330,10 +21330,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "pickCodicon(this.currentStatusIcon() ?? DEFAULT_STATUS_ICON)",
-            "start_line": 641,
-            "end_line": 641,
+            "start_line": 647,
+            "end_line": 647,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/quickActions.ts",
             "target_symbol": "pickCodicon"
@@ -21357,7 +21357,7 @@
             "start_line": 49,
             "end_line": 49,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/quickActions.ts"
           }
@@ -21377,10 +21377,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "changeSettings(\"workspaceColor\", \"Color My Workspaces\", DEFAULT_SETTING_KEYS, \"inherit\", false)",
-            "start_line": 298,
-            "end_line": 298,
+            "start_line": 299,
+            "end_line": 299,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/settingsActions.ts",
             "target_symbol": "changeSettings"
@@ -21388,10 +21388,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "changeSettings(\"workspaceColor\", \"Color My Workspaces\", DEFAULT_SETTING_KEYS, \"defaults\", false)",
-            "start_line": 306,
-            "end_line": 306,
+            "start_line": 307,
+            "end_line": 307,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/settingsActions.ts",
             "target_symbol": "changeSettings"
@@ -21415,7 +21415,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/settingsActions.ts"
           }
@@ -21438,7 +21438,7 @@
             "start_line": 50,
             "end_line": 50,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/statusController.ts"
           }
@@ -21458,10 +21458,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "formatStatusBarText(name)",
-            "start_line": 1010,
-            "end_line": 1010,
+            "start_line": 1018,
+            "end_line": 1018,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/statusDisplay.ts",
             "target_symbol": "formatStatusBarText"
@@ -21469,10 +21469,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "statusChipColor(color, flags.statusBar && applied ? tones.statusBar : undefined)",
-            "start_line": 1012,
-            "end_line": 1012,
+            "start_line": 1020,
+            "end_line": 1020,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/statusDisplay.ts",
             "target_symbol": "statusChipColor"
@@ -21480,10 +21480,10 @@
           {
             "path": "src/workspaceColorController.ts",
             "symbol": "buildStatusPresentation({\n        hasWorkspace: this.hasWorkspace(),\n        name,\n        color: this.currentColor(state),\n        icon: this.currentStatusIcon() ?? DEFAULT_STATUS_ICON,\n        showName: this.showStatusBarLabel(),\n        showIcon: this.showStatusBarIcon(),\n        clickTarget: this.statusBarClickTarget(),\n      })",
-            "start_line": 1024,
-            "end_line": 1032,
+            "start_line": 1032,
+            "end_line": 1040,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "call",
             "resolved_target": "src/statusDisplay.ts",
             "target_symbol": "buildStatusPresentation"
@@ -21507,7 +21507,7 @@
             "start_line": 51,
             "end_line": 55,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/statusDisplay.ts"
           }
@@ -21530,7 +21530,7 @@
             "start_line": 56,
             "end_line": 56,
             "extractor": "tree-sitter-typescript",
-            "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
+            "source_digest": "5c53821b63abfdfbc61fd0a5e921b8ce2b56234d11e1dcc51c6b0162bb3f7f01",
             "kind": "import",
             "resolved_target": "src/writeQueue.ts"
           }
@@ -22165,2532 +22165,16 @@
     }
   ],
   "triggers": [],
-  "source_digest": "294254ef316fcaca5cf07a2ba1b1134637af61554bad3666e117b79f5fcbd3f2",
+  "source_digest": "23238e76633db6cd32d841c5f3dfaaef411d8753dbf4b973e8d2942804d8e829",
   "changes": {
-    "added_nodes": [
-      {
-        "id": "scripts/release-artifact.mjs",
-        "path": "scripts/release-artifact.mjs",
-        "label": "release-artifact.mjs",
-        "type": "module",
-        "boundary": "Repository",
-        "entrypoints": [],
-        "tests": [],
-        "test_evidence": [],
-        "analysis": "analyzed",
-        "is_test": false,
-        "symbols": [
-          "api",
-          "checkTag",
-          "command",
-          "digest",
-          "identity",
-          "publishGitHub",
-          "record",
-          "required",
-          "verify"
-        ],
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "command",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "definition"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "required",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "definition"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "digest",
-              "start_line": 20,
-              "end_line": 20,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "definition"
-            }
-          ]
-        },
-        "callers": [],
-        "callees": [
-          {
-            "id": "external:javascript:node:assert",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:child_process",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:child_process",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:crypto",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:crypto",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "imports",
-            "type_only": false
-          }
-        ],
-        "parent": "scripts"
-      },
-      {
-        "id": "src/favorites.test.ts",
-        "path": "src/favorites.test.ts",
-        "label": "favorites.test.ts",
-        "type": "module",
-        "boundary": "Repository",
-        "entrypoints": [],
-        "tests": [],
-        "test_evidence": [],
-        "analysis": "analyzed",
-        "is_test": true,
-        "symbols": [],
-        "evidence": {
-          "status": "inventory",
-          "locations": [
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "import assert from \"node:assert/strict\";",
-              "start_line": 1,
-              "end_line": 1,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "file"
-            }
-          ]
-        },
-        "callers": [],
-        "callees": [
-          {
-            "id": "external:javascript:node:assert",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:os",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:path",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:test",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:test",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "src/favorites.ts",
-            "type": "imports",
-            "type_only": false
-          }
-        ],
-        "parent": "src"
-      },
-      {
-        "id": "src/favorites.ts",
-        "path": "src/favorites.ts",
-        "label": "favorites.ts",
-        "type": "module",
-        "boundary": "Repository",
-        "entrypoints": [],
-        "tests": [
-          "src/favorites.test.ts"
-        ],
-        "test_evidence": [
-          {
-            "test": "src/favorites.test.ts",
-            "type": "imports",
-            "location": {
-              "path": "src/favorites.test.ts",
-              "symbol": "import { ColorFavorites } from \"./favorites.ts\";",
-              "start_line": 6,
-              "end_line": 6,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "import",
-              "resolved_target": "src/favorites.ts"
-            }
-          }
-        ],
-        "analysis": "analyzed",
-        "is_test": false,
-        "symbols": [
-          "ColorFavorites",
-          "FavoriteColor",
-          "validFavoriteName",
-          "writeFavorites"
-        ],
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.ts",
-              "symbol": "FavoriteColor",
-              "start_line": 6,
-              "end_line": 6,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "definition"
-            },
-            {
-              "path": "src/favorites.ts",
-              "symbol": "validFavoriteName",
-              "start_line": 12,
-              "end_line": 12,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "definition"
-            },
-            {
-              "path": "src/favorites.ts",
-              "symbol": "ColorFavorites",
-              "start_line": 16,
-              "end_line": 16,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "definition"
-            }
-          ]
-        },
-        "callers": [
-          {
-            "id": "src/favorites.test.ts",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "src/workspaceColorController.ts",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "src/workspaceColorController.ts",
-            "type": "imports",
-            "type_only": false
-          }
-        ],
-        "callees": [
-          {
-            "id": "external:javascript:node:crypto",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:crypto",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:path",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "src/color.ts",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "src/color.ts",
-            "type": "imports",
-            "type_only": false
-          }
-        ],
-        "parent": "src"
-      },
-      {
-        "id": "src/releaseArtifact.test.ts",
-        "path": "src/releaseArtifact.test.ts",
-        "label": "releaseArtifact.test.ts",
-        "type": "module",
-        "boundary": "Repository",
-        "entrypoints": [],
-        "tests": [],
-        "test_evidence": [],
-        "analysis": "analyzed",
-        "is_test": true,
-        "symbols": [],
-        "evidence": {
-          "status": "inventory",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "import assert from \"node:assert/strict\";",
-              "start_line": 1,
-              "end_line": 1,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "file"
-            }
-          ]
-        },
-        "callers": [],
-        "callees": [
-          {
-            "id": "external:javascript:node:assert",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:child_process",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:child_process",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:fs",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:os",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:path",
-            "type": "imports",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:test",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "external:javascript:node:test",
-            "type": "imports",
-            "type_only": false
-          }
-        ],
-        "parent": "src"
-      },
-      {
-        "id": "src/settingsActions.ts",
-        "path": "src/settingsActions.ts",
-        "label": "settingsActions.ts",
-        "type": "module",
-        "boundary": "Repository",
-        "entrypoints": [],
-        "tests": [],
-        "test_evidence": [],
-        "analysis": "analyzed",
-        "is_test": false,
-        "symbols": [
-          "SettingsScope",
-          "changeSettings"
-        ],
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/settingsActions.ts",
-              "symbol": "SettingsScope",
-              "start_line": 3,
-              "end_line": 3,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "2d9238bfb5bac72260aefe2e61375e542b733efe4b0123de61798144ac6b8ab1",
-              "kind": "definition"
-            },
-            {
-              "path": "src/settingsActions.ts",
-              "symbol": "changeSettings",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "2d9238bfb5bac72260aefe2e61375e542b733efe4b0123de61798144ac6b8ab1",
-              "kind": "definition"
-            }
-          ]
-        },
-        "callers": [
-          {
-            "id": "src/workspaceColorController.ts",
-            "type": "calls",
-            "type_only": false
-          },
-          {
-            "id": "src/workspaceColorController.ts",
-            "type": "imports",
-            "type_only": false
-          }
-        ],
-        "callees": [
-          {
-            "id": "external:javascript:vscode",
-            "type": "imports",
-            "type_only": false
-          }
-        ],
-        "parent": "src"
-      }
-    ],
+    "added_nodes": [],
     "removed_nodes": [],
-    "added_edges": [
-      {
-        "id": "edge:04f14591f5640fd4d315",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:assert",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import assert from \"node:assert/strict\";",
-              "start_line": 1,
-              "end_line": 1,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:assert"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:f4f64a593b2b139bf090",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:child_process",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "spawnSync(binary, args, { encoding: \"utf8\", timeout: 120_000, maxBuffer: 16 * 1024 * 1024 })",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:child_process",
-              "target_symbol": "spawnSync"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:fd536239dbc64ad8572e",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:child_process",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import { spawnSync } from \"node:child_process\";",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:child_process"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:57aecd24f8525fe93010",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:crypto",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "createHash(\"sha256\")",
-              "start_line": 21,
-              "end_line": 21,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:crypto",
-              "target_symbol": "createHash"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:686a5179503dd040e2ff",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:crypto",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import { createHash } from \"node:crypto\";",
-              "start_line": 2,
-              "end_line": 2,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:crypto"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:dc90432e94856040dd9a",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:fs",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 8,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "createReadStream(file)",
-              "start_line": 22,
-              "end_line": 22,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "createReadStream"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "readFile(\"package.json\", \"utf8\")",
-              "start_line": 27,
-              "end_line": 27,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "readFile"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "readdir(\".\")",
-              "start_line": 35,
-              "end_line": 35,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "readdir"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:d3987ac0244919f1f32e",
-        "from": "scripts/release-artifact.mjs",
-        "to": "external:javascript:node:fs",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 2,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import { createReadStream } from \"node:fs\";",
-              "start_line": 3,
-              "end_line": 3,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:fs"
-            },
-            {
-              "path": "scripts/release-artifact.mjs",
-              "symbol": "import { appendFile, readFile, readdir, writeFile } from \"node:fs/promises\";",
-              "start_line": 4,
-              "end_line": 4,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "22d3b41f2b8372e224466db0a33ae9686e4b99ee8fa3b45e713a20207e51ea69",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:fs"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:5ec9688c9c4d44cc10ff",
-        "from": "src/favorites.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "import assert from \"node:assert/strict\";",
-              "start_line": 1,
-              "end_line": 1,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:assert"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:3697ebe486614e6692df",
-        "from": "src/favorites.test.ts",
-        "to": "external:javascript:node:fs",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 2,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "mkdtemp(path.join(os.tmpdir(), \"color-favorites-\"))",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "mkdtemp"
-            },
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "rm(directory, { recursive: true, force: true })",
-              "start_line": 27,
-              "end_line": 27,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "rm"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:9dbf58f17457b95e2745",
-        "from": "src/favorites.test.ts",
-        "to": "external:javascript:node:fs",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "import { mkdtemp, rm } from \"node:fs/promises\";",
-              "start_line": 3,
-              "end_line": 3,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:fs"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:8644ba27bef7d42b189d",
-        "from": "src/favorites.test.ts",
-        "to": "external:javascript:node:os",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "import os from \"node:os\";",
-              "start_line": 4,
-              "end_line": 4,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:os"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:435929121dc4e44a94de",
-        "from": "src/favorites.test.ts",
-        "to": "external:javascript:node:path",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "import path from \"node:path\";",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:path"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:4aaa04c18bcf8bd2d546",
-        "from": "src/favorites.test.ts",
-        "to": "external:javascript:node:test",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "test(\"favorites serialize windows, reject stale edits and enforce capacity\", async () => {\n  const directory = await mkdtemp(path.join(os.tmpdir(), \"color-favorites-\"));\n  try {\n    const first = new ColorFavorites(directory);\n    const second = new ColorFavorites(directory);\n    await first.save(\"First\", \"#123456\");\n    const original = (await second.read())[0]!;\n    await first.update(original, \"Renamed\");\n    await assert.rejects(second.update(original), /changed in another window/);\n    assert.equal((await first.read())[0]!.name, \"Renamed\");\n    const races = await Promise.allSettled([first.save(\"One\", \"#111111\"), second.save(\"Two\", \"#222222\")]);\n    assert.ok(races.some((result) => result.status === \"fulfilled\"));\n    const saved = await first.read();\n    assert.equal(saved.length, 1 + races.filter((result) => result.status === \"fulfilled\").length);\n    for (let count = saved.length; count < 24; count++) await first.save(`Color ${count}`, \"#123456\");\n    await assert.rejects(second.save(\"Overflow\", \"#ffffff\"), /up to 24/);\n    assert.equal((await first.read()).length, 24);\n    await second.update((await second.read())[0]!);\n    assert.equal((await first.read()).length, 23);\n  } finally { await rm(directory, { recursive: true, force: true }); }\n})",
-              "start_line": 8,
-              "end_line": 28,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:test",
-              "target_symbol": "default"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:4eb245aa368f7c4020d0",
-        "from": "src/favorites.test.ts",
-        "to": "external:javascript:node:test",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "import test from \"node:test\";",
-              "start_line": 2,
-              "end_line": 2,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:test"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:e71fc3ac02ea240ff397",
-        "from": "src/favorites.test.ts",
-        "to": "src/favorites.ts",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.test.ts",
-              "symbol": "import { ColorFavorites } from \"./favorites.ts\";",
-              "start_line": 6,
-              "end_line": 6,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "b95e3ca8cc3f9e08a0de13c262a0c4be612813685ee66cbcda0fa1b3a9214a7a",
-              "kind": "import",
-              "resolved_target": "src/favorites.ts"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:7f492dd8d36532bee55a",
-        "from": "src/favorites.ts",
-        "to": "external:javascript:node:crypto",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 2,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.ts",
-              "symbol": "randomUUID()",
-              "start_line": 48,
-              "end_line": 48,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:crypto",
-              "target_symbol": "randomUUID"
-            },
-            {
-              "path": "src/favorites.ts",
-              "symbol": "randomUUID()",
-              "start_line": 71,
-              "end_line": 71,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:crypto",
-              "target_symbol": "randomUUID"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:e1ef3577d52795efb23a",
-        "from": "src/favorites.ts",
-        "to": "external:javascript:node:crypto",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.ts",
-              "symbol": "import { randomUUID } from \"node:crypto\";",
-              "start_line": 1,
-              "end_line": 1,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:crypto"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:9aafb49a7ced09b0ec96",
-        "from": "src/favorites.ts",
-        "to": "external:javascript:node:fs",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 7,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.ts",
-              "symbol": "readFile(path.join(this.directory, \"favorites.json\"), \"utf8\")",
-              "start_line": 22,
-              "end_line": 22,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "readFile"
-            },
-            {
-              "path": "src/favorites.ts",
-              "symbol": "mkdir(this.directory, { recursive: true })",
-              "start_line": 38,
-              "end_line": 38,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "mkdir"
-            },
-            {
-              "path": "src/favorites.ts",
-              "symbol": "open(lockPath, \"wx\")",
-              "start_line": 41,
-              "end_line": 41,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "open"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:5022eea79e5fc6cb397d",
-        "from": "src/favorites.ts",
-        "to": "external:javascript:node:fs",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.ts",
-              "symbol": "import { mkdir, open, readFile, rename, unlink } from \"node:fs/promises\";",
-              "start_line": 2,
-              "end_line": 2,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:fs"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:932d4e222588085ce611",
-        "from": "src/favorites.ts",
-        "to": "external:javascript:node:path",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.ts",
-              "symbol": "import path from \"node:path\";",
-              "start_line": 3,
-              "end_line": 3,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:path"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:cf0aaaaea650f6812a15",
-        "from": "src/favorites.ts",
-        "to": "src/color.ts",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 2,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.ts",
-              "symbol": "normalizeHex(entry.color)",
-              "start_line": 30,
-              "end_line": 30,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "call",
-              "resolved_target": "src/color.ts",
-              "target_symbol": "normalizeHex"
-            },
-            {
-              "path": "src/favorites.ts",
-              "symbol": "normalizeHex(color)",
-              "start_line": 69,
-              "end_line": 69,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "call",
-              "resolved_target": "src/color.ts",
-              "target_symbol": "normalizeHex"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:12d54e8160f1d880f746",
-        "from": "src/favorites.ts",
-        "to": "src/color.ts",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/favorites.ts",
-              "symbol": "import { normalizeHex } from \"./color.ts\";",
-              "start_line": 4,
-              "end_line": 4,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "f1ce8df8ae488a3584c137a68b9e674743861a1c24692ae0b395499b34fafa37",
-              "kind": "import",
-              "resolved_target": "src/color.ts"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:c277ea7817d66ebc82a3",
-        "from": "src/releaseArtifact.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "import assert from \"node:assert/strict\";",
-              "start_line": 1,
-              "end_line": 1,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:assert"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:541cde05244c0b713423",
-        "from": "src/releaseArtifact.test.ts",
-        "to": "external:javascript:node:child_process",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 3,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "spawnSync(\"git\", [\"rev-parse\", \"HEAD\"], { encoding: \"utf8\" })",
-              "start_line": 10,
-              "end_line": 10,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:child_process",
-              "target_symbol": "spawnSync"
-            },
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "spawnSync(\"git\", [\"rev-parse\", \"--absolute-git-dir\"], { encoding: \"utf8\" })",
-              "start_line": 11,
-              "end_line": 11,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:child_process",
-              "target_symbol": "spawnSync"
-            },
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "spawnSync(process.execPath, [script, action], { cwd: directory, env: { ...environment, ...override }, encoding: \"utf8\", timeout: 15_000 })",
-              "start_line": 17,
-              "end_line": 17,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:child_process",
-              "target_symbol": "spawnSync"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:5bf829c19deee00688c6",
-        "from": "src/releaseArtifact.test.ts",
-        "to": "external:javascript:node:child_process",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "import { spawnSync } from \"node:child_process\";",
-              "start_line": 3,
-              "end_line": 3,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:child_process"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:8ea332b25d7efa2bf6aa",
-        "from": "src/releaseArtifact.test.ts",
-        "to": "external:javascript:node:fs",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 8,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "mkdtemp(path.join(os.tmpdir(), \"release-artifact-\"))",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "mkdtemp"
-            },
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "writeFile(path.join(directory, \"package.json\"), JSON.stringify({ name: \"fixture\", publisher: \"fixture\", displayName: \"Fixture\", version: \"0.1.0\" }))",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "writeFile"
-            },
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "writeFile(path.join(directory, \"fixture.vsix\"), \"verified bytes\")",
-              "start_line": 15,
-              "end_line": 15,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:fs",
-              "target_symbol": "writeFile"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:deef91fd9590355e4328",
-        "from": "src/releaseArtifact.test.ts",
-        "to": "external:javascript:node:fs",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "import { mkdtemp, readFile, rm, writeFile } from \"node:fs/promises\";",
-              "start_line": 4,
-              "end_line": 4,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:fs"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:fd8a68e5821bab4406c3",
-        "from": "src/releaseArtifact.test.ts",
-        "to": "external:javascript:node:os",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "import os from \"node:os\";",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:os"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:5d18370b0d3b5f7fdfb2",
-        "from": "src/releaseArtifact.test.ts",
-        "to": "external:javascript:node:path",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "import path from \"node:path\";",
-              "start_line": 6,
-              "end_line": 6,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:path"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:13fb991a9cdddb608fc0",
-        "from": "src/releaseArtifact.test.ts",
-        "to": "external:javascript:node:test",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "test(\"release consumers reject changed bytes and source before any publishing command\", async () => {\n  const directory = await mkdtemp(path.join(os.tmpdir(), \"release-artifact-\"));\n  const source = spawnSync(\"git\", [\"rev-parse\", \"HEAD\"], { encoding: \"utf8\" }).stdout.trim();\n  const gitDirectory = spawnSync(\"git\", [\"rev-parse\", \"--absolute-git-dir\"], { encoding: \"utf8\" }).stdout.trim();\n  const script = path.resolve(\"scripts/release-artifact.mjs\");\n  try {\n    await writeFile(path.join(directory, \"package.json\"), JSON.stringify({ name: \"fixture\", publisher: \"fixture\", displayName: \"Fixture\", version: \"0.1.0\" }));\n    await writeFile(path.join(directory, \"fixture.vsix\"), \"verified bytes\");\n    const environment = { ...process.env, GIT_DIR: gitDirectory, GITHUB_REPOSITORY: \"fixture/fixture\", GITHUB_SHA: source, GITHUB_OUTPUT: path.join(directory, \"output\") };\n    const run = (action: string, override: Record<string, string> = {}) => spawnSync(process.execPath, [script, action], { cwd: directory, env: { ...environment, ...override }, encoding: \"utf8\", timeout: 15_000 });\n    const recorded = run(\"record\");\n    assert.equal(recorded.status, 0, recorded.stderr);\n    const metadata = JSON.parse(await readFile(path.join(directory, \"release-artifact.json\"), \"utf8\"));\n    const expected = { RELEASE_SOURCE: source, RELEASE_SHA256: metadata.sha256, RELEASE_VSIX: \"fixture.vsix\" };\n    assert.equal(run(\"verify\", expected).status, 0);\n    assert.notEqual(run(\"verify\", { ...expected, RELEASE_SOURCE: \"0\".repeat(40) }).status, 0);\n    await writeFile(path.join(directory, \"fixture.vsix\"), \"modified bytes\");\n    assert.notEqual(run(\"publish-github\", expected).status, 0);\n    await writeFile(path.join(directory, \"fixture.vsix\"), \"verified bytes\");\n    await writeFile(path.join(directory, \"other.vsix\"), \"extra package\");\n    assert.notEqual(run(\"record\").status, 0, \"More than one VSIX was accepted.\");\n  } finally { await rm(directory, { force: true, recursive: true }); }\n})",
-              "start_line": 8,
-              "end_line": 30,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:test",
-              "target_symbol": "default"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:891626ce4421151801e4",
-        "from": "src/releaseArtifact.test.ts",
-        "to": "external:javascript:node:test",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/releaseArtifact.test.ts",
-              "symbol": "import test from \"node:test\";",
-              "start_line": 2,
-              "end_line": 2,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "90e9663cd5b6dea24fcfb388d2bf577d13543fe83ef88617d672434a39221ffd",
-              "kind": "import",
-              "resolved_target": "external:javascript:node:test"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:a26849d9fff5a6289881",
-        "from": "src/settingsActions.ts",
-        "to": "external:javascript:vscode",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/settingsActions.ts",
-              "symbol": "import * as vscode from \"vscode\";",
-              "start_line": 1,
-              "end_line": 1,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "2d9238bfb5bac72260aefe2e61375e542b733efe4b0123de61798144ac6b8ab1",
-              "kind": "import",
-              "resolved_target": "external:javascript:vscode"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:4e228d584949977da7d6",
-        "from": "src/workspaceColorController.ts",
-        "to": "src/favorites.ts",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 2,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/workspaceColorController.ts",
-              "symbol": "validFavoriteName(value)",
-              "start_line": 194,
-              "end_line": 194,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
-              "kind": "call",
-              "resolved_target": "src/favorites.ts",
-              "target_symbol": "validFavoriteName"
-            },
-            {
-              "path": "src/workspaceColorController.ts",
-              "symbol": "validFavoriteName(value)",
-              "start_line": 218,
-              "end_line": 218,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
-              "kind": "call",
-              "resolved_target": "src/favorites.ts",
-              "target_symbol": "validFavoriteName"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:4729e34ea47960a77c09",
-        "from": "src/workspaceColorController.ts",
-        "to": "src/favorites.ts",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/workspaceColorController.ts",
-              "symbol": "import { ColorFavorites, validFavoriteName } from \"./favorites.ts\";",
-              "start_line": 57,
-              "end_line": 57,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
-              "kind": "import",
-              "resolved_target": "src/favorites.ts"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:ba1d71f65193c36ca12b",
-        "from": "src/workspaceColorController.ts",
-        "to": "src/settingsActions.ts",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 2,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/workspaceColorController.ts",
-              "symbol": "changeSettings(\"workspaceColor\", \"Color My Workspaces\", DEFAULT_SETTING_KEYS, \"inherit\", false)",
-              "start_line": 298,
-              "end_line": 298,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
-              "kind": "call",
-              "resolved_target": "src/settingsActions.ts",
-              "target_symbol": "changeSettings"
-            },
-            {
-              "path": "src/workspaceColorController.ts",
-              "symbol": "changeSettings(\"workspaceColor\", \"Color My Workspaces\", DEFAULT_SETTING_KEYS, \"defaults\", false)",
-              "start_line": 306,
-              "end_line": 306,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
-              "kind": "call",
-              "resolved_target": "src/settingsActions.ts",
-              "target_symbol": "changeSettings"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:dc4d4024ee32ab94a646",
-        "from": "src/workspaceColorController.ts",
-        "to": "src/settingsActions.ts",
-        "type": "imports",
-        "type_only": false,
-        "evidence_count": 1,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/workspaceColorController.ts",
-              "symbol": "import { changeSettings } from \"./settingsActions.ts\";",
-              "start_line": 1,
-              "end_line": 1,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "8c52042b8af55e04afd06408c2a533e66c773a68a046e7582abca3cfd916620f",
-              "kind": "import",
-              "resolved_target": "src/settingsActions.ts"
-            }
-          ]
-        }
-      }
-    ],
-    "removed_edges": [
-      {
-        "id": "edge:dd36ddda96952df9fd12",
-        "from": ".vscode-test.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 3,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": ".vscode-test.mjs",
-              "symbol": "path.join(tmpdir(), \"cmw-workspace-\")",
-              "start_line": 6,
-              "end_line": 6,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "b8d70ec24a618974afde396d2ae41c8a8b667224ce46524a53b1c0c0f7d90975",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            },
-            {
-              "path": ".vscode-test.mjs",
-              "symbol": "path.join(tmpdir(), \"cmw-user-data-\")",
-              "start_line": 7,
-              "end_line": 7,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "b8d70ec24a618974afde396d2ae41c8a8b667224ce46524a53b1c0c0f7d90975",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            },
-            {
-              "path": ".vscode-test.mjs",
-              "symbol": "path.join(workspaceFolder, \"README.md\")",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "b8d70ec24a618974afde396d2ae41c8a8b667224ce46524a53b1c0c0f7d90975",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:f8abcf7e1689ddb2643e",
-        "from": "scripts/check-media.mjs",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 5,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/check-media.mjs",
-              "symbol": "assert.equal(metadata.format, \"png\", `${label} must be PNG.`)",
-              "start_line": 60,
-              "end_line": 60,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "scripts/check-media.mjs",
-              "symbol": "assert.equal(metadata.width, width, `${label} width changed.`)",
-              "start_line": 61,
-              "end_line": 61,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "scripts/check-media.mjs",
-              "symbol": "assert.equal(metadata.height, height, `${label} height changed.`)",
-              "start_line": 62,
-              "end_line": 62,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:6a9b15f5f3ff5cec97c1",
-        "from": "scripts/check-release.mjs",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 17,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/check-release.mjs",
-              "symbol": "assert.match(manifest.version, /^\\d+\\.\\d+\\.\\d+$/)",
-              "start_line": 13,
-              "end_line": 13,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "51e00196382133417d6f4f4b94015b85403f7de7bcc8f3bff23d0b4f23a33621",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "match"
-            },
-            {
-              "path": "scripts/check-release.mjs",
-              "symbol": "assert.equal(manifest.main, \"./dist/extension.js\")",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "51e00196382133417d6f4f4b94015b85403f7de7bcc8f3bff23d0b4f23a33621",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "scripts/check-release.mjs",
-              "symbol": "assert.deepEqual(manifest.extensionKind, [\"ui\"])",
-              "start_line": 15,
-              "end_line": 15,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "51e00196382133417d6f4f4b94015b85403f7de7bcc8f3bff23d0b4f23a33621",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:4a6264f3dd14a18cd6e1",
-        "from": "scripts/inspect-vsix.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 3,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "path.resolve(process.argv[2])",
-              "start_line": 5,
-              "end_line": 5,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "path.basename(archivePath)",
-              "start_line": 59,
-              "end_line": 59,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "basename"
-            },
-            {
-              "path": "scripts/inspect-vsix.mjs",
-              "symbol": "path.resolve(resolved[0].name)",
-              "start_line": 71,
-              "end_line": 71,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:098308a5c1187649c2a2",
-        "from": "scripts/measure-performance.mjs",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 7,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/measure-performance.mjs",
-              "symbol": "assert.equal(lastPlan.changed, false)",
-              "start_line": 41,
-              "end_line": 41,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c1e4215965c36875556f3f8ac94078c60a3a164877d601aed06bc0506a731ca",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "scripts/measure-performance.mjs",
-              "symbol": "assert.ok(colorMilliseconds < 2_000, `color generation exceeded budget: ${colorMilliseconds}ms`)",
-              "start_line": 62,
-              "end_line": 62,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c1e4215965c36875556f3f8ac94078c60a3a164877d601aed06bc0506a731ca",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            },
-            {
-              "path": "scripts/measure-performance.mjs",
-              "symbol": "assert.ok(planMilliseconds < 2_000, `ownership planning exceeded budget: ${planMilliseconds}ms`)",
-              "start_line": 63,
-              "end_line": 63,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c1e4215965c36875556f3f8ac94078c60a3a164877d601aed06bc0506a731ca",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:d8d58d3bbe77cd4d8659",
-        "from": "scripts/measure-performance.mjs",
-        "to": "external:javascript:node:perf_hooks",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 6,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/measure-performance.mjs",
-              "symbol": "performance.now()",
-              "start_line": 13,
-              "end_line": 13,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c1e4215965c36875556f3f8ac94078c60a3a164877d601aed06bc0506a731ca",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:perf_hooks",
-              "target_symbol": "now"
-            },
-            {
-              "path": "scripts/measure-performance.mjs",
-              "symbol": "performance.now()",
-              "start_line": 22,
-              "end_line": 22,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c1e4215965c36875556f3f8ac94078c60a3a164877d601aed06bc0506a731ca",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:perf_hooks",
-              "target_symbol": "now"
-            },
-            {
-              "path": "scripts/measure-performance.mjs",
-              "symbol": "performance.now()",
-              "start_line": 30,
-              "end_line": 30,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "4c1e4215965c36875556f3f8ac94078c60a3a164877d601aed06bc0506a731ca",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:perf_hooks",
-              "target_symbol": "now"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:885b85a9ac636c112bd5",
-        "from": "scripts/render-icons.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 7,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/render-icons.mjs",
-              "symbol": "path.resolve(path.dirname(fileURLToPath(import.meta.url)), \"..\")",
-              "start_line": 6,
-              "end_line": 6,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "64a41c9426c8d8beb9a353d7d6f3267883ca6eda6a3f1e4617b4df5ac58367b9",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "resolve"
-            },
-            {
-              "path": "scripts/render-icons.mjs",
-              "symbol": "path.dirname(fileURLToPath(import.meta.url))",
-              "start_line": 6,
-              "end_line": 6,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "64a41c9426c8d8beb9a353d7d6f3267883ca6eda6a3f1e4617b4df5ac58367b9",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "dirname"
-            },
-            {
-              "path": "scripts/render-icons.mjs",
-              "symbol": "path.join(root, \"media\")",
-              "start_line": 7,
-              "end_line": 7,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "64a41c9426c8d8beb9a353d7d6f3267883ca6eda6a3f1e4617b4df5ac58367b9",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:3b5e7f437f5337630b91",
-        "from": "scripts/test-vsix.mjs",
-        "to": "external:javascript:node:path",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 8,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "scripts/test-vsix.mjs",
-              "symbol": "path.join(tmpdir(), \"color-my-workspaces-vsix-\")",
-              "start_line": 13,
-              "end_line": 13,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "b0733550a749b6270b528b5fa8c6ce704fd5ea3c4e27a80a8e27685f9c9d1883",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            },
-            {
-              "path": "scripts/test-vsix.mjs",
-              "symbol": "path.join(root, \"workspace\")",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "b0733550a749b6270b528b5fa8c6ce704fd5ea3c4e27a80a8e27685f9c9d1883",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            },
-            {
-              "path": "scripts/test-vsix.mjs",
-              "symbol": "path.join(root, \"user-data\")",
-              "start_line": 15,
-              "end_line": 15,
-              "extractor": "tree-sitter-javascript",
-              "source_digest": "b0733550a749b6270b528b5fa8c6ce704fd5ea3c4e27a80a8e27685f9c9d1883",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:path",
-              "target_symbol": "join"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:a4665204d5f0ef848a8d",
-        "from": "src/chrome.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 37,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/chrome.test.ts",
-              "symbol": "assert.equal(colors[\"titleBar.activeBackground\"], \"#1f4b6e\")",
-              "start_line": 15,
-              "end_line": 15,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "14c24e99cfe0b3c761f68efacfc519783f21936b222a5ddd7ed8cd76512f764c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/chrome.test.ts",
-              "symbol": "assert.equal(colors[\"statusBar.background\"], undefined)",
-              "start_line": 16,
-              "end_line": 16,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "14c24e99cfe0b3c761f68efacfc519783f21936b222a5ddd7ed8cd76512f764c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/chrome.test.ts",
-              "symbol": "assert.equal(colors[\"activityBar.background\"], undefined)",
-              "start_line": 17,
-              "end_line": 17,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "14c24e99cfe0b3c761f68efacfc519783f21936b222a5ddd7ed8cd76512f764c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:394b120dd84465c7c6a5",
-        "from": "src/color.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 34,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/color.test.ts",
-              "symbol": "assert.deepEqual(parseHex(\"#3af\"), { r: 51, g: 170, b: 255 })",
-              "start_line": 23,
-              "end_line": 23,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "ee4d0a0fed6c82c4e9cdd1c70d43743214355f1ac81e0b7696d18e9854893106",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            },
-            {
-              "path": "src/color.test.ts",
-              "symbol": "assert.deepEqual(parseHex(\"336699\"), { r: 51, g: 102, b: 153 })",
-              "start_line": 24,
-              "end_line": 24,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "ee4d0a0fed6c82c4e9cdd1c70d43743214355f1ac81e0b7696d18e9854893106",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            },
-            {
-              "path": "src/color.test.ts",
-              "symbol": "assert.deepEqual(parseHex(\"#336699aa\"), { r: 51, g: 102, b: 153 })",
-              "start_line": 25,
-              "end_line": 25,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "ee4d0a0fed6c82c4e9cdd1c70d43743214355f1ac81e0b7696d18e9854893106",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:be204034b43956510075",
-        "from": "src/compatibility.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 12,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/compatibility.test.ts",
-              "symbol": "assert.equal(compatibility.mode, \"modern\")",
-              "start_line": 12,
-              "end_line": 12,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "1ce5f9cc722a5081e6068e30e897ff2799e2f1c93584d6d9e63ad8a4d96aa892",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/compatibility.test.ts",
-              "symbol": "assert.ok(compatibility.limitations.some((item) => item.includes(\"transparent\")))",
-              "start_line": 13,
-              "end_line": 13,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "1ce5f9cc722a5081e6068e30e897ff2799e2f1c93584d6d9e63ad8a4d96aa892",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            },
-            {
-              "path": "src/compatibility.test.ts",
-              "symbol": "assert.equal(compatibility.mode, \"classic\")",
-              "start_line": 21,
-              "end_line": 21,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "1ce5f9cc722a5081e6068e30e897ff2799e2f1c93584d6d9e63ad8a4d96aa892",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:7c9dca0acf695defab06",
-        "from": "src/icons.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 10,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/icons.test.ts",
-              "symbol": "assert.equal(parseCodiconId(\"folder\"), \"folder\")",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "bea4621ea975cc46544be174efe33983fae0b51effa4cf5717ff95953265efcb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/icons.test.ts",
-              "symbol": "assert.equal(parseCodiconId(\"$(rocket)\"), \"rocket\")",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "bea4621ea975cc46544be174efe33983fae0b51effa4cf5717ff95953265efcb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/icons.test.ts",
-              "symbol": "assert.equal(parseCodiconId(\"\"), undefined)",
-              "start_line": 13,
-              "end_line": 13,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "bea4621ea975cc46544be174efe33983fae0b51effa4cf5717ff95953265efcb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:fd4ebd3dff412026b7b0",
-        "from": "src/identity.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 16,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/identity.test.ts",
-              "symbol": "assert.equal(\r\n      canonicalizeWorkspaceUri(\r\n        { scheme: \"file\", path: \"/C:/Users/Ada/Work/Shop/\" },\r\n        \"win32\",\r\n      ),\r\n      \"file:///c:/users/ada/work/shop\",\r\n    )",
-              "start_line": 14,
-              "end_line": 20,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "d78c78c1150a7fdbad7b5a5f196b1f2b17394f2315e00b72ccf4d24fcca7e943",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/identity.test.ts",
-              "symbol": "assert.equal(\r\n      canonicalizeWorkspaceUri({\r\n        scheme: \"vscode-remote\",\r\n        authority: \"ssh-remote+Prod\",\r\n        path: \"/Home/Ada/Shop/\",\r\n      }),\r\n      \"vscode-remote://ssh-remote+Prod/Home/Ada/Shop\",\r\n    )",
-              "start_line": 24,
-              "end_line": 31,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "d78c78c1150a7fdbad7b5a5f196b1f2b17394f2315e00b72ccf4d24fcca7e943",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/identity.test.ts",
-              "symbol": "assert.equal(\r\n      canonicalizeWorkspaceUri({ scheme: \"untitled\", path: \"/Untitled-1\" }),\r\n      undefined,\r\n    )",
-              "start_line": 35,
-              "end_line": 38,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "d78c78c1150a7fdbad7b5a5f196b1f2b17394f2315e00b72ccf4d24fcca7e943",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:1179f0521a65253f0b7e",
-        "from": "src/localState.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 16,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/localState.test.ts",
-              "symbol": "assert.equal(state.disabled, false)",
-              "start_line": 13,
-              "end_line": 13,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "34289ffbce791cfa351b45c1d525fba2acea4d6d86d6f4d1395b044780586d8e",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/localState.test.ts",
-              "symbol": "assert.equal(state.onboardingCompleted, false)",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "34289ffbce791cfa351b45c1d525fba2acea4d6d86d6f4d1395b044780586d8e",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/localState.test.ts",
-              "symbol": "assert.equal(state.legacyAutoApply, false)",
-              "start_line": 15,
-              "end_line": 15,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "34289ffbce791cfa351b45c1d525fba2acea4d6d86d6f4d1395b044780586d8e",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:93f013c054611813ce47",
-        "from": "src/managedKeys.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 8,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/managedKeys.test.ts",
-              "symbol": "assert.equal(MANAGED_COLOR_REGISTRY_VERSION, 1)",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "ed7eeb11201c1993b9772260abf0b5eb43a868e6432e013db10f4784e6a08481",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/managedKeys.test.ts",
-              "symbol": "assert.equal(MANAGED_COLOR_GROUPS.length, 4)",
-              "start_line": 15,
-              "end_line": 15,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "ed7eeb11201c1993b9772260abf0b5eb43a868e6432e013db10f4784e6a08481",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/managedKeys.test.ts",
-              "symbol": "assert.equal(new Set(MANAGED_CHROME_KEYS).size, MANAGED_CHROME_KEYS.length)",
-              "start_line": 16,
-              "end_line": 16,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "ed7eeb11201c1993b9772260abf0b5eb43a868e6432e013db10f4784e6a08481",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:fc5d8db9ce0745c4f7a8",
-        "from": "src/manifest.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 7,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/manifest.test.ts",
-              "symbol": "assert.deepEqual(manifest.extensionKind, [\"ui\"])",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "1755d1c4f0a5aa02f36546ece971edbae088bc9e6ef6d61173da434ad041a00c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            },
-            {
-              "path": "src/manifest.test.ts",
-              "symbol": "assert.equal(manifest.capabilities.untrustedWorkspaces.supported, true)",
-              "start_line": 10,
-              "end_line": 10,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "1755d1c4f0a5aa02f36546ece971edbae088bc9e6ef6d61173da434ad041a00c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/manifest.test.ts",
-              "symbol": "assert.equal(manifest.capabilities.virtualWorkspaces, true)",
-              "start_line": 11,
-              "end_line": 11,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "1755d1c4f0a5aa02f36546ece971edbae088bc9e6ef6d61173da434ad041a00c",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:6c47ae3de0a1bb100bce",
-        "from": "src/ownership.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 19,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/ownership.test.ts",
-              "symbol": "assert.equal(applied.state.records[\"titleBar.activeBackground\"]?.baseline, \"#aa0000\")",
-              "start_line": 24,
-              "end_line": 24,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "4eb4b2df8d8321026dc4360118724852ccbf11fdd227d2aaa2895aa2c02eeae1",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/ownership.test.ts",
-              "symbol": "assert.equal(applied.value?.[\"editor.background\"], \"#111111\")",
-              "start_line": 25,
-              "end_line": 25,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "4eb4b2df8d8321026dc4360118724852ccbf11fdd227d2aaa2895aa2c02eeae1",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/ownership.test.ts",
-              "symbol": "assert.deepEqual(cleared.value, {\r\n      \"titleBar.activeBackground\": \"#aa0000\",\r\n      \"editor.background\": \"#111111\",\r\n    })",
-              "start_line": 28,
-              "end_line": 31,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "4eb4b2df8d8321026dc4360118724852ccbf11fdd227d2aaa2895aa2c02eeae1",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:e5386ba1dc6ed8c853f1",
-        "from": "src/palette.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 9,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/palette.test.ts",
-              "symbol": "assert.equal(PALETTE.length, 18)",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "0d86a9d43625c0591c617a0fe349a3d1d77631e9d134f437bf6d11f78cde77b4",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/palette.test.ts",
-              "symbol": "assert.equal(PALETTE.length % PALETTE_COLUMNS, 0)",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "0d86a9d43625c0591c617a0fe349a3d1d77631e9d134f437bf6d11f78cde77b4",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/palette.test.ts",
-              "symbol": "assert.equal(PALETTE_COLUMNS, 9)",
-              "start_line": 10,
-              "end_line": 10,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "0d86a9d43625c0591c617a0fe349a3d1d77631e9d134f437bf6d11f78cde77b4",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:3b9fdc0f318226aad688",
-        "from": "src/panelMessages.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 14,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/panelMessages.test.ts",
-              "symbol": "assert.deepEqual(parsePanelMessage({ type: \"setColor\", color: \"#ABC\" }), {\r\n      type: \"setColor\",\r\n      color: \"#aabbcc\",\r\n    })",
-              "start_line": 7,
-              "end_line": 10,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "64da7910d600b02fb3e60dc3c99bd356fa05159f75c745084f9767ce7a3c72d1",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            },
-            {
-              "path": "src/panelMessages.test.ts",
-              "symbol": "assert.deepEqual(parsePanelMessage({ type: \"setDefaults\" }), { type: \"setDefaults\" })",
-              "start_line": 14,
-              "end_line": 14,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "64da7910d600b02fb3e60dc3c99bd356fa05159f75c745084f9767ce7a3c72d1",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            },
-            {
-              "path": "src/panelMessages.test.ts",
-              "symbol": "assert.equal(parsePanelMessage({ type: \"ready\", admin: true }), undefined)",
-              "start_line": 15,
-              "end_line": 15,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "64da7910d600b02fb3e60dc3c99bd356fa05159f75c745084f9767ce7a3c72d1",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:13c025afc37eff135ff3",
-        "from": "src/panelState.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 11,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/panelState.test.ts",
-              "symbol": "assert.equal(typeof tones.titleBar, \"string\")",
-              "start_line": 8,
-              "end_line": 8,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "422a6b23c621618b47a806a6e08e024b8d3b24667e2dfaf0455f9820e25270da",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/panelState.test.ts",
-              "symbol": "assert.equal(typeof tones.statusBar, \"string\")",
-              "start_line": 9,
-              "end_line": 9,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "422a6b23c621618b47a806a6e08e024b8d3b24667e2dfaf0455f9820e25270da",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/panelState.test.ts",
-              "symbol": "assert.notEqual(tones.titleBar, tones.statusBar)",
-              "start_line": 10,
-              "end_line": 10,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "422a6b23c621618b47a806a6e08e024b8d3b24667e2dfaf0455f9820e25270da",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "notEqual"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:8e5fa39ff13ccb7b5353",
-        "from": "src/statusDisplay.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 21,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/statusDisplay.test.ts",
-              "symbol": "assert.equal(formatStatusBarText(\"shop\"), \"shop\")",
-              "start_line": 17,
-              "end_line": 17,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "c89767a69504048c15633b53d6a65f45dc76b025710fbda9ec1bb2d5374a70eb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/statusDisplay.test.ts",
-              "symbol": "assert.equal(text.endsWith(\"…\"), true)",
-              "start_line": 22,
-              "end_line": 22,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "c89767a69504048c15633b53d6a65f45dc76b025710fbda9ec1bb2d5374a70eb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            },
-            {
-              "path": "src/statusDisplay.test.ts",
-              "symbol": "assert.equal(text.includes(\"$(\"), false)",
-              "start_line": 23,
-              "end_line": 23,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "c89767a69504048c15633b53d6a65f45dc76b025710fbda9ec1bb2d5374a70eb",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:0c7ed84039739352b43b",
-        "from": "src/writeQueue.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 6,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "src/writeQueue.test.ts",
-              "symbol": "assert.deepEqual(await Promise.all([first, second]), [\"first\", \"second\"])",
-              "start_line": 18,
-              "end_line": 18,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "96c24ab1a9d31ab5608aa9fa48fc0f606e46251ba8a0fa52fa81b9384ebac556",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            },
-            {
-              "path": "src/writeQueue.test.ts",
-              "symbol": "assert.deepEqual(seen, [1, 2])",
-              "start_line": 19,
-              "end_line": 19,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "96c24ab1a9d31ab5608aa9fa48fc0f606e46251ba8a0fa52fa81b9384ebac556",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "deepEqual"
-            },
-            {
-              "path": "src/writeQueue.test.ts",
-              "symbol": "assert.equal(await first, \"first\")",
-              "start_line": 49,
-              "end_line": 49,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "96c24ab1a9d31ab5608aa9fa48fc0f606e46251ba8a0fa52fa81b9384ebac556",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "equal"
-            }
-          ]
-        }
-      },
-      {
-        "id": "edge:cc177cb8fe2ead71986a",
-        "from": "test/integration/extension.test.ts",
-        "to": "external:javascript:node:assert",
-        "type": "calls",
-        "type_only": false,
-        "evidence_count": 20,
-        "evidence": {
-          "status": "verified",
-          "locations": [
-            {
-              "path": "test/integration/extension.test.ts",
-              "symbol": "assert.ok(extension, `${EXTENSION_ID} is installed in the test host`)",
-              "start_line": 12,
-              "end_line": 12,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "0e8c750196a8feec79985a8c135cb1a95c10d1df82fbc7b205016bfe79b37861",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            },
-            {
-              "path": "test/integration/extension.test.ts",
-              "symbol": "assert.ok(activationMilliseconds < 2_000)",
-              "start_line": 17,
-              "end_line": 17,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "0e8c750196a8feec79985a8c135cb1a95c10d1df82fbc7b205016bfe79b37861",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            },
-            {
-              "path": "test/integration/extension.test.ts",
-              "symbol": "assert.ok(colors)",
-              "start_line": 22,
-              "end_line": 22,
-              "extractor": "tree-sitter-typescript",
-              "source_digest": "0e8c750196a8feec79985a8c135cb1a95c10d1df82fbc7b205016bfe79b37861",
-              "kind": "call",
-              "resolved_target": "external:javascript:node:assert",
-              "target_symbol": "ok"
-            }
-          ]
-        }
-      }
-    ],
+    "added_edges": [],
+    "removed_edges": [],
     "boundary_changes": [],
     "new_cycles": [],
-    "changed": true,
-    "changed_node_ids": [
-      ".vscode-test.mjs",
-      "external:javascript:node:assert",
-      "external:javascript:node:child_process",
-      "external:javascript:node:crypto",
-      "external:javascript:node:fs",
-      "external:javascript:node:os",
-      "external:javascript:node:path",
-      "external:javascript:node:perf_hooks",
-      "external:javascript:node:test",
-      "external:javascript:vscode",
-      "scripts/check-media.mjs",
-      "scripts/check-release.mjs",
-      "scripts/inspect-vsix.mjs",
-      "scripts/measure-performance.mjs",
-      "scripts/release-artifact.mjs",
-      "scripts/render-icons.mjs",
-      "scripts/test-vsix.mjs",
-      "src/chrome.test.ts",
-      "src/color.test.ts",
-      "src/color.ts",
-      "src/compatibility.test.ts",
-      "src/favorites.test.ts",
-      "src/favorites.ts",
-      "src/icons.test.ts",
-      "src/identity.test.ts",
-      "src/localState.test.ts",
-      "src/managedKeys.test.ts",
-      "src/manifest.test.ts",
-      "src/ownership.test.ts",
-      "src/palette.test.ts",
-      "src/panelMessages.test.ts",
-      "src/panelState.test.ts",
-      "src/releaseArtifact.test.ts",
-      "src/settingsActions.ts",
-      "src/statusDisplay.test.ts",
-      "src/workspaceColorController.ts",
-      "src/writeQueue.test.ts",
-      "test/integration/extension.test.ts"
-    ]
+    "changed": false,
+    "changed_node_ids": []
   },
-  "generation_id": "696d4e6b4f7955f9627f54d93b4f9ed3a8e38ad112f61f9407d61c52d517b957"
+  "generation_id": "2e89e0c6988e270120565fef3ff557829bf9f1d757e19c33c5d8df60df1c420c"
 }
