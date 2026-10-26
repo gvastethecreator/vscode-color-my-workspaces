@@ -1,7 +1,7 @@
 # Code map: vscode-color-my-workspaces
 
-Generated: 2026-10-26T07:24:04Z | Commit: `85f528aa866b` | Schema: 2
-Generation: `4ba73cdbc56cd2dfede8ded705d692976c338d4cc3aeb5f714845edaa421743f`
+Generated: 2026-10-26T07:41:56Z | Commit: `e7d02d2f68e6` | Schema: 2
+Generation: `946d99ac45899148d505bfeeffb7cb015f59af9a348adc7a91211f588421503f`
 Scope: . | Inventory: working-tree
 Nodes: 70 | Edges: 244 | Flows: 0
 

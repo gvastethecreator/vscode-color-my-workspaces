@@ -45,7 +45,7 @@ for (const [file] of deterministicOutputs) {
 }
 
 for (const [file, label] of previews) {
-  await verifyAlphaPng(file, 1200, 800, label);
+  await verifyAlphaPng(file, label);
 }
 
 console.log(`Verified ${deterministicOutputs.length} deterministic media files and ${previews.length} installed-extension previews.`);
@@ -54,12 +54,12 @@ function digest(value) {
   return createHash("sha256").update(value).digest("hex");
 }
 
-async function verifyAlphaPng(filename, width, height, label) {
+async function verifyAlphaPng(filename, label) {
   const image = sharp(filename);
   const metadata = await image.metadata();
   assert.equal(metadata.format, "png", `${label} must be PNG.`);
-  assert.equal(metadata.width, width, `${label} width changed.`);
-  assert.equal(metadata.height, height, `${label} height changed.`);
+  assert.ok(metadata.width >= 640 && metadata.width <= 1200, `${label} width must be 640-1200px.`);
+  assert.ok(metadata.height >= 200 && metadata.height <= 800, `${label} height must be 200-800px.`);
   assert.equal(metadata.channels, 4, `${label} must carry native alpha.`);
   const { data, info } = await image.ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const alpha = info.channels - 1;

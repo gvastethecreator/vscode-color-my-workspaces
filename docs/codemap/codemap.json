@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-26T07:24:04Z",
-  "generated_from_commit": "85f528aa866b861232f36bc9ce3f44776149a191",
+  "generated_at": "2026-10-26T07:41:56Z",
+  "generated_from_commit": "e7d02d2f68e6beca1fd9bb4b9a2496dc76786ea2",
   "scope": [
     "."
   ],
@@ -75,8 +75,8 @@
         "path": "scripts/check-media.mjs",
         "origin": "tracked",
         "state": "present",
-        "digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
-        "size": 2638
+        "digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
+        "size": 2678
       },
       {
         "path": "scripts/check-release.mjs",
@@ -429,7 +429,7 @@
         "size": 399
       }
     ],
-    "digest": "abfcd26488c34d32e893e3e4eea07ec294e3bb00b16a63047de73e64cd6a5cc1"
+    "digest": "6300b33777d952dfec9885428992c506c6a83912377cdd07c7d5521494127c14"
   },
   "coverage": {
     "discovered_files": 90,
@@ -3734,7 +3734,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:node:assert"
           },
@@ -3963,7 +3963,7 @@
             "start_line": 4,
             "end_line": 4,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:node:child_process"
           },
@@ -4045,7 +4045,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:node:crypto"
           },
@@ -4374,7 +4374,7 @@
             "start_line": 3,
             "end_line": 3,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:node:fs"
           },
@@ -7406,7 +7406,7 @@
             "start_line": 5,
             "end_line": 5,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:sharp"
           },
@@ -7426,7 +7426,7 @@
             "start_line": 21,
             "end_line": 21,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "call",
             "resolved_target": "external:javascript:sharp",
             "target_symbol": "default"
@@ -7684,7 +7684,7 @@
             "start_line": 7,
             "end_line": 7,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "definition"
           },
           {
@@ -7693,7 +7693,7 @@
             "start_line": 12,
             "end_line": 12,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "definition"
           },
           {
@@ -7702,7 +7702,7 @@
             "start_line": 17,
             "end_line": 17,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "definition"
           }
         ]
@@ -15123,7 +15123,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:node:assert"
           }
@@ -15146,7 +15146,7 @@
             "start_line": 30,
             "end_line": 34,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "call",
             "resolved_target": "external:javascript:node:child_process",
             "target_symbol": "spawnSync"
@@ -15170,7 +15170,7 @@
             "start_line": 4,
             "end_line": 4,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:node:child_process"
           }
@@ -15193,7 +15193,7 @@
             "start_line": 54,
             "end_line": 54,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "call",
             "resolved_target": "external:javascript:node:crypto",
             "target_symbol": "createHash"
@@ -15217,7 +15217,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:node:crypto"
           }
@@ -15240,7 +15240,7 @@
             "start_line": 19,
             "end_line": 19,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "call",
             "resolved_target": "external:javascript:node:fs",
             "target_symbol": "readFile"
@@ -15251,7 +15251,7 @@
             "start_line": 41,
             "end_line": 41,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "call",
             "resolved_target": "external:javascript:node:fs",
             "target_symbol": "readFile"
@@ -15275,7 +15275,7 @@
             "start_line": 3,
             "end_line": 3,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:node:fs"
           }
@@ -15298,7 +15298,7 @@
             "start_line": 21,
             "end_line": 21,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "call",
             "resolved_target": "external:javascript:sharp",
             "target_symbol": "default"
@@ -15309,7 +15309,7 @@
             "start_line": 58,
             "end_line": 58,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "call",
             "resolved_target": "external:javascript:sharp",
             "target_symbol": "default"
@@ -15333,7 +15333,7 @@
             "start_line": 5,
             "end_line": 5,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "8b205412a1d179569fa671ab1a5450f5868576f8c7e5c8fab2a339ac62e71d1c",
+            "source_digest": "6317c21f21d24390242a6b8fe1f0b41b8b2bae8d61694cbd82effebacfdff0bc",
             "kind": "import",
             "resolved_target": "external:javascript:sharp"
           }
@@ -22165,7 +22165,7 @@
     }
   ],
   "triggers": [],
-  "source_digest": "65673508d5d63e5eaef1bb50419df528f6e92e45bf6175fd4b18486f8086314f",
+  "source_digest": "ce8668b0700267907c962e06cd70e64054f905291797b321422530cb0c309da5",
   "changes": {
     "added_nodes": [],
     "removed_nodes": [],
@@ -22176,5 +22176,5 @@
     "changed": false,
     "changed_node_ids": []
   },
-  "generation_id": "4ba73cdbc56cd2dfede8ded705d692976c338d4cc3aeb5f714845edaa421743f"
+  "generation_id": "946d99ac45899148d505bfeeffb7cb015f59af9a348adc7a91211f588421503f"
 }
