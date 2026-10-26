@@ -1,0 +1,14 @@
+{
+  "name": "color-my-workspaces-vsix-harness",
+  "displayName": "Color My Workspaces VSIX Harness",
+  "publisher": "local-tests",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "vscode": "^1.134.0"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./extension.cjs"
+}

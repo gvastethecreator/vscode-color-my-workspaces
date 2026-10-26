@@ -1,0 +1,237 @@
+{
+  "name": "color-my-workspaces",
+  "displayName": "Color My Workspaces",
+  "description": "Color the VS Code title bar, activity bar, and status bar per workspace.",
+  "version": "0.1.0",
+  "packageManager": "pnpm@12.15.0",
+  "publisher": "gvastethecreator",
+  "author": {
+    "name": "gvastethecreator"
+  },
+  "license": "MIT",
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#0a0a0a",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gvastethecreator/vscode-color-my-workspaces.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gvastethecreator/vscode-color-my-workspaces/issues"
+  },
+  "homepage": "https://github.com/gvastethecreator/vscode-color-my-workspaces#readme",
+  "keywords": [
+    "workspace",
+    "color",
+    "title bar",
+    "status bar",
+    "activity bar",
+    "command center",
+    "chrome",
+    "theme"
+  ],
+  "engines": {
+    "vscode": "^1.134.0"
+  },
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "extensionKind": [
+    "ui"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": true
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "workspaceColor.applyFromFolder",
+        "title": "Apply Color from Folder",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.pick",
+        "title": "Pick Color",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.quickActions",
+        "title": "Change Color...",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.surprise",
+        "title": "Surprise Me",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.reset",
+        "title": "Clear Color",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.resetSettings",
+        "title": "Reset to Inherited Settings...",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.setDefaults",
+        "title": "Apply Factory Defaults...",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.reapply",
+        "title": "Reapply Color and Take Ownership",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.openPanel",
+        "title": "Open Color My Workspaces Settings",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.favorites",
+        "title": "Favorite Colors...",
+        "category": "Color My Workspaces"
+      },
+      {
+        "command": "workspaceColor.saveFavorite",
+        "title": "Save Current Color as Favorite...",
+        "category": "Color My Workspaces"
+      }
+    ],
+    "configuration": {
+      "title": "Color My Workspaces",
+      "properties": {
+        "workspaceColor.label": {
+          "type": "string",
+          "default": "",
+          "scope": "window",
+          "maxLength": 80,
+          "description": "Name shown in the status bar. Empty uses the folder or saved workspace name."
+        },
+        "workspaceColor.showStatusBarLabel": {
+          "type": "boolean",
+          "default": true,
+          "scope": "window",
+          "description": "Show the project name on the left of the status bar. Turn off to hide the name."
+        },
+        "workspaceColor.icon": {
+          "type": "string",
+          "default": "",
+          "scope": "window",
+          "description": "Codicon id shown on the left of the status bar, such as folder or rocket. Empty uses folder when the icon is shown."
+        },
+        "workspaceColor.showStatusBarIcon": {
+          "type": "boolean",
+          "default": false,
+          "scope": "window",
+          "description": "Show a Codicon on the left of the status bar. Turn off to hide the icon."
+        },
+        "workspaceColor.color": {
+          "type": "string",
+          "format": "color",
+          "default": "",
+          "scope": "window",
+          "description": "Hex color for this workspace. Empty previews a stable color derived from its canonical URI. Applying a color writes workspace settings and may change a committed .vscode/settings.json or .code-workspace file."
+        },
+        "workspaceColor.autoApply": {
+          "type": "boolean",
+          "default": true,
+          "scope": "window",
+          "description": "Apply and reapply the derived or saved color when this workspace opens. Turn this off to require a manual apply."
+        },
+        "workspaceColor.identity": {
+          "type": "string",
+          "default": "",
+          "scope": "window",
+          "maxLength": 120,
+          "description": "Optional stable identity override used to derive the workspace color. Empty uses the saved workspace URI or sorted folder URIs."
+        },
+        "workspaceColor.stepped": {
+          "type": "boolean",
+          "default": true,
+          "scope": "window",
+          "description": "Use a slightly different tone on each bar so they read as steps, not a flat block."
+        },
+        "workspaceColor.titleBar": {
+          "type": "boolean",
+          "default": true,
+          "scope": "window",
+          "description": "Color the title bar and window shell. Experimental Modern UI can blend this color across other chrome surfaces."
+        },
+        "workspaceColor.activityBar": {
+          "type": "boolean",
+          "default": true,
+          "scope": "window",
+          "description": "Color the activity bar. Without an override, this is off for a top or bottom activity bar under experimental Modern UI and on otherwise."
+        },
+        "workspaceColor.statusBar": {
+          "type": "boolean",
+          "default": true,
+          "scope": "window",
+          "description": "Color the status bar."
+        },
+        "workspaceColor.statusBarClick": {
+          "type": "string",
+          "enum": [
+            "quick",
+            "full"
+          ],
+          "enumDescriptions": [
+            "Open the quick pick from the status bar.",
+            "Open the Color My Workspaces settings panel."
+          ],
+          "default": "quick",
+          "scope": "window",
+          "description": "What a click on the status bar name or color pill opens."
+        },
+        "workspaceColor.commandCenter": {
+          "type": "boolean",
+          "default": true,
+          "scope": "window",
+          "description": "Color the command center."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run package",
+    "compile": "tsc --noEmit && node esbuild.js",
+    "watch": "node esbuild.js --watch",
+    "package": "tsc --noEmit && node esbuild.js --production",
+    "icons": "node scripts/render-icons.mjs",
+    "vsix": "pnpm run package && vsce package --no-dependencies",
+    "inspect:vsix": "node scripts/inspect-vsix.mjs",
+    "test:vsix": "pnpm run vsix && pnpm run inspect:vsix && node scripts/test-vsix.mjs",
+    "check:media": "node scripts/check-media.mjs",
+    "check:performance": "pnpm run compile && node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --experimental-strip-types scripts/measure-performance.mjs",
+    "check:release": "node scripts/check-release.mjs",
+    "build:integration": "node scripts/build-integration.mjs",
+    "test:integration": "pnpm run compile && pnpm run build:integration && vscode-test",
+    "check-types": "tsc --noEmit",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test --experimental-strip-types src/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/vscode": "1.134.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.1.0",
+    "@vscode/vsce": "^4.0.0",
+    "esbuild": "^0.28.2",
+    "ovsx": "^1.3.0",
+    "sharp": "^0.35.5",
+    "typescript": "^7.0.2"
+  }
+}
