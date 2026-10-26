@@ -6,7 +6,7 @@ Extension id: `gvastethecreator.color-my-workspaces`
 
 ## Status
 
-0.1.0 release candidate · Priority P0
+0.1.1 release candidate · Priority P0
 
 ## Product summary
 
@@ -156,7 +156,7 @@ The release runtime is bundled. There are no production dependencies.
 
 ## Assets
 
-`media/source/color-my-workspaces-approved.png` is the accepted native-alpha Imagegen source for the Tag Mate-aligned, vectorized semi-3D 3×3 folder grid. `media/icon-512.png` and `media/icon.png` are direct alpha-preserving 512×512 and 256×256 renders; no SVG reinterpretation remains. `media/preview.png` shows the extension applied to a synthetic TypeScript workspace, and `media/preview-settings.png` shows the minimal settings panel beside the same code. Both are native-alpha captures from Color My Workspaces 0.1.0 installed in stable VS Code.
+`media/source/color-my-workspaces-approved.png` is the accepted native-alpha Imagegen source for the Tag Mate-aligned, vectorized semi-3D 3×3 folder grid. `media/icon-512.png` and `media/icon.png` are direct alpha-preserving 512×512 and 256×256 renders; no SVG reinterpretation remains. `media/preview.png` shows the extension applied to a synthetic TypeScript workspace, and `media/preview-settings.png` shows the minimal settings panel on its own, without the sidebar or source editor. Both are native-alpha captures from Color My Workspaces 0.1.1 installed in stable VS Code.
 
 ## Explicit non-goals
 
@@ -183,7 +183,7 @@ The release runtime is bundled. There are no production dependencies.
 
 ## Release boundary
 
-Implementation may produce and verify the 0.1.0 VSIX without registry credentials. Tagging, publishing, merging, unpublishing, or deprecating remain explicit operator actions.
+Implementation may produce and verify the current VSIX without registry credentials. Tagging, publishing, merging, unpublishing, or deprecating remain explicit operator actions.
 
 ## Accepted PR implementation
 

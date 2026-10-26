@@ -1,7 +1,7 @@
 # Security and privacy review
 
 Review date: 2026-09-03
-Release candidate: 0.1.0
+Release candidate: 0.1.1
 
 ## Data inventory
 

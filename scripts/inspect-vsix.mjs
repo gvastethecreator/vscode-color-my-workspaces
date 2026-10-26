@@ -50,8 +50,8 @@ if (archive.length > 5 * 1024 * 1024) {
 for (const name of ["extension/media/preview.png", "extension/media/preview-settings.png"]) {
   const entry = entries.find((candidate) => candidate.name === name);
   const preview = pngMetadata(extractEntry(archive, entry), name);
-  if (preview.width !== 1200 || preview.height !== 800 || ![4, 6].includes(preview.colorType)) {
-    throw new Error(`${name} must be a 1200x800 PNG with alpha.`);
+  if (preview.width < 640 || preview.width > 1200 || preview.height < 200 || preview.height > 800 || ![4, 6].includes(preview.colorType)) {
+    throw new Error(`${name} must be a 640-1200 by 200-800 PNG with alpha.`);
   }
 }
 

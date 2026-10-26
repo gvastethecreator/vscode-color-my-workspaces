@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-26T04:43:25Z",
-  "generated_from_commit": "43093886b595cec3b922ecbeeb2b753f48a45eba",
+  "generated_at": "2026-10-26T07:24:04Z",
+  "generated_from_commit": "85f528aa866b861232f36bc9ce3f44776149a191",
   "scope": [
     "."
   ],
@@ -61,8 +61,8 @@
         "path": "package.json",
         "origin": "tracked",
         "state": "present",
-        "digest": "cc2afd6edb8e5804893dd5e42782c4a3fdba658226a2821c70454484a5306bd8",
-        "size": 7988
+        "digest": "288601f09532100a21e1675146698e11f9156117c95ba11310c038fdc68a9b61",
+        "size": 8225
       },
       {
         "path": "scripts/build-integration.mjs",
@@ -89,8 +89,8 @@
         "path": "scripts/inspect-vsix.mjs",
         "origin": "tracked",
         "state": "present",
-        "digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
-        "size": 5264
+        "digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
+        "size": 5320
       },
       {
         "path": "scripts/measure-performance.mjs",
@@ -429,7 +429,7 @@
         "size": 399
       }
     ],
-    "digest": "cac8bfd20dc521168282f49fd54d06b0f476d4406f46d1ccf1380ebdc6ee02cf"
+    "digest": "abfcd26488c34d32e893e3e4eea07ec294e3bb00b16a63047de73e64cd6a5cc1"
   },
   "coverage": {
     "discovered_files": 90,
@@ -4692,7 +4692,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "import",
             "resolved_target": "external:javascript:node:path"
           },
@@ -7353,7 +7353,7 @@
             "start_line": 3,
             "end_line": 3,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "import",
             "resolved_target": "external:javascript:node:zlib"
           },
@@ -7363,7 +7363,7 @@
             "start_line": 115,
             "end_line": 115,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "call",
             "resolved_target": "external:javascript:node:zlib",
             "target_symbol": "inflateRawSync"
@@ -7603,7 +7603,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "json-manifest",
-            "source_digest": "cc2afd6edb8e5804893dd5e42782c4a3fdba658226a2821c70454484a5306bd8",
+            "source_digest": "288601f09532100a21e1675146698e11f9156117c95ba11310c038fdc68a9b61",
             "kind": "file"
           }
         ]
@@ -7868,7 +7868,7 @@
             "start_line": 5,
             "end_line": 5,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "definition"
           },
           {
@@ -7877,7 +7877,7 @@
             "start_line": 6,
             "end_line": 6,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "definition"
           },
           {
@@ -7886,7 +7886,7 @@
             "start_line": 7,
             "end_line": 7,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "definition"
           }
         ]
@@ -15448,7 +15448,7 @@
             "start_line": 6,
             "end_line": 6,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "call",
             "resolved_target": "external:javascript:node:fs",
             "target_symbol": "readFile"
@@ -15459,7 +15459,7 @@
             "start_line": 7,
             "end_line": 7,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "call",
             "resolved_target": "external:javascript:node:fs",
             "target_symbol": "readFile"
@@ -15470,7 +15470,7 @@
             "start_line": 63,
             "end_line": 63,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "call",
             "resolved_target": "external:javascript:node:fs",
             "target_symbol": "readdir"
@@ -15494,7 +15494,7 @@
             "start_line": 1,
             "end_line": 1,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "import",
             "resolved_target": "external:javascript:node:fs"
           }
@@ -15517,7 +15517,7 @@
             "start_line": 2,
             "end_line": 2,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "import",
             "resolved_target": "external:javascript:node:path"
           }
@@ -15540,7 +15540,7 @@
             "start_line": 115,
             "end_line": 115,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "call",
             "resolved_target": "external:javascript:node:zlib",
             "target_symbol": "inflateRawSync"
@@ -15564,7 +15564,7 @@
             "start_line": 3,
             "end_line": 3,
             "extractor": "tree-sitter-javascript",
-            "source_digest": "19d0b51aa7b1c5730c4dad766b9b1c99655a42c8adc3110b7faa7ec0f4bb3f7c",
+            "source_digest": "8b32d861afb5a14903d6c83377f1f4391344e60e3787d1ef890c80b056dae174",
             "kind": "import",
             "resolved_target": "external:javascript:node:zlib"
           }
@@ -22165,7 +22165,7 @@
     }
   ],
   "triggers": [],
-  "source_digest": "23238e76633db6cd32d841c5f3dfaaef411d8753dbf4b973e8d2942804d8e829",
+  "source_digest": "65673508d5d63e5eaef1bb50419df528f6e92e45bf6175fd4b18486f8086314f",
   "changes": {
     "added_nodes": [],
     "removed_nodes": [],
@@ -22176,5 +22176,5 @@
     "changed": false,
     "changed_node_ids": []
   },
-  "generation_id": "2e89e0c6988e270120565fef3ff557829bf9f1d757e19c33c5d8df60df1c420c"
+  "generation_id": "4ba73cdbc56cd2dfede8ded705d692976c338d4cc3aeb5f714845edaa421743f"
 }

@@ -2,13 +2,14 @@
 
 All notable changes to Color My Workspaces are documented in this file.
 
-## [Unreleased]
+## [0.1.1] - 2026-10-26
 
+- Refreshed README screenshots from the packaged extension running in stable VS Code.
 - Fixed: an ignored conflict or reload notification could block every later color change and activation. Automatic refreshes keep external values without a prompt; explicit actions ask with a modal choice. A failed automatic write reports once per session.
 - Fixed: install no longer fails on Linux, macOS, or Windows ARM because of a Windows-only TypeScript binary dependency.
 - Favorite Colors supports up to 24 named colors across projects in the current user's extension storage. Save does not apply a color. Apply uses the existing color ownership controller. Rename and Delete reject stale selections from another window. An exclusive storage lock and atomic file replacement prevent concurrent windows from overwriting changes. A crashed writer can leave a lock; close all VS Code windows before removing that lock from extension storage. Preferences exclude the current color, label and identity. Clear Color remains the operation that restores owned workbench colors.
 
-## [0.1.0] - Unreleased
+## [0.1.0] - Local candidate
 
 ### Added
 

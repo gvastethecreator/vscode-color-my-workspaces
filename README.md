@@ -19,7 +19,7 @@ Color the title bar, activity bar, Status Bar, and command center with a stable 
 <table>
   <tr>
     <td width="50%"><img src="media/preview.png" alt="Color My Workspaces applied to a TypeScript project in VS Code" width="100%"></td>
-    <td width="50%"><img src="media/preview-settings.png" alt="Color My Workspaces settings beside example TypeScript code" width="100%"></td>
+    <td width="50%"><img src="media/preview-settings.png" alt="Color My Workspaces settings shown without the sidebar or source editor" width="100%"></td>
   </tr>
   <tr>
     <td align="center"><sub>Colored workspace</sub></td>

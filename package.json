@@ -2,7 +2,7 @@
   "name": "color-my-workspaces",
   "displayName": "Color My Workspaces",
   "description": "Color the VS Code title bar, activity bar, and status bar per workspace.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packageManager": "pnpm@12.15.0",
   "publisher": "gvastethecreator",
   "author": {
